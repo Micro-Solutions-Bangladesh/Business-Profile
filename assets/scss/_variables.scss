@@ -1,0 +1,155 @@
+
+/**
+ * Break Point Sizes for different size devices
+ */
+$bpxld: 1200px;
+$bpld: 1024px;
+$bpmsd: 992px; /* Break Point Medium Standard */
+$bpmd: 768px;
+$bpsd: 576px;
+$bpxsd: 480px;
+
+$bpxldMax: 1199px;
+$bpldMax: 1023px;
+$bpmsdMax: 991px; /* Break Point Medium Standard */
+$bpmdMax: 767px;
+$bpsdMax: 575px;
+$bpxsdMax: 479px;
+ 
+$big-gutter:                    50px;
+$default-gutter:                30px;
+$small-gutter:                  10px;
+
+$color_white:                   #fff;
+$color_reddish:                 #d74440;
+$color_greenish:                #00ff00;
+$color_blackish:                #191919;
+$color_black:                   #000;
+
+$color__theme-primary:           #2d3290;
+$color__theme-secondary:         #01aef0;
+
+$color__highlight:              lighten($color__theme-primary, 20%);
+$color__highlight-bg:           lighten($color__theme-primary, 50%);
+
+
+$body-bg-color:                 #f5f5f5;
+$content-bg-color:              #fff;
+
+$size__font-body:             16px;
+$font__family-body:           -apple-system,BlinkMacSystemFont,"Roboto Condensed",sans-serif,arial;
+
+$color__font-body:            $color_blackish;
+$color__font-body-lighten:    lighten($color_blackish, 30%);
+
+$color__link:                   $color__font-body;
+$color__link-hover:             $color__font-body;
+ 
+ 
+$color__bg-top-nav:              $color__theme-primary;
+$color__font-top-nav:            $color_white;
+$color__font-top-nav-hover:      $color_white;
+
+$color__bg-top-bar:              $color__theme-primary;
+$color__font-top-bar:            $color_white;
+
+
+
+$h1-font-family:                sans-serif,arial;
+
+$h1-font-size:                  $size__font-body * 1.4;
+$h2-font-size:                  $size__font-body * 1.3;
+$h3-font-size:                  $size__font-body * 1.2;
+$h4-font-size:                  $size__font-body * 1.1;
+$h5-font-size:                  $size__font-body * 1.1;
+$h6-font-size:                  $size__font-body;
+ 
+ 
+ 
+/**
+ * @include border-radius(1px);
+ */
+@mixin border-radius($radius) {
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: $radius;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: $radius;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: $radius;
+}
+ 
+/**
+ * @include box-shadow(2px 2px 3px #aaa);
+ */
+@mixin box-shadow($top, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top;
+        -moz-box-shadow:inset $top;
+        box-shadow:inset $top;
+    } @else {
+        -webkit-box-shadow: $top;
+        -moz-box-shadow: $top;
+        box-shadow: $top;
+    }
+}
+ 
+/**
+ * @include transition-stuffs(background-color .5s ease, color .5s ease);
+ */
+@mixin transition-stuffs($args1, $args2: false) {
+    @if $args2 {
+        -webkit-transition: $args1, $args2;
+        -moz-transition: $args1, $args2;
+        -o-transition: $args1, $args2;
+        transition: $args1, $args2;
+    } @else {
+        -webkit-transition: $args1;
+        -moz-transition: $args1;
+        -o-transition: $args1;
+        transition: $args1;
+    }
+}
+
+/**
+ * @include icon-font("\ef99");
+ */
+@mixin icon-font($fontcode: false) {
+    font-family: 'IcoFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    @if $fontcode {
+        content: $fontcode;
+    }
+}
+
+
+/**
+ * Ensure all font family declarations come with non-latin fallbacks
+ *
+ * copied from twentynineteen theme
+ *
+ * @include font-family( $font__family-body );
+ */
+@mixin font-family( $font_family: $font__family-body ) {
+	font-family: $font_family;
+	// @extend %non-latin-fonts;
+}
+
+/* Build our non-latin font styles */
+// %non-latin-fonts {
+// 	@each $lang, $font__fallback in $font__fallbacks {
+// 		&:lang(#{$lang}) {
+// 			font-family: unquote( $font__fallback );
+// 		}
+// 	}
+// }

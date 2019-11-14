@@ -1,0 +1,152 @@
+
+.home-carousel {
+    background-color: lighten($color__theme-primary, 55%);
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    label {
+        flex: 1 1 auto;
+    }
+	.search-field {
+        width: 100%;
+        height: 40px;
+        border: 1px solid darken(#ccc, 5%);
+        border-right: none;
+        padding: 0 $small-gutter;
+	}
+	.search-submit {
+        flex: 0 0 auto;
+        padding: 0 $default-gutter/2;
+        height: 40px;
+        border: 1px solid darken($color__theme-primary, 5%);
+        border-left: none;
+        background-color: $color__theme-primary;
+        color: $color_white;
+        font-size: 22px;
+    }
+}
+
+
+.widget {
+    margin: 0 0 $default-gutter;
+    padding: $default-gutter/2;
+    background-color: $content-bg-color;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+
+.widget_archive,
+.widget_categories,
+.widget_meta,
+.widget_nav_menu,
+.widget_pages,
+.widget_recent_comments,
+.widget_recent_entries,
+.widget_rss {
+
+	ul {
+		padding: 0;
+        list-style: none;
+        
+        >li {
+            margin-bottom: $small-gutter;
+
+            &::before {
+                @include icon-font("\ea72"); // icofont-curved-double-right
+                font-weight: bold;
+            }
+        }
+	}
+}
+
+.widget_tag_cloud {
+	.tagcloud {
+		font-weight: 700;
+	}
+}
+
+
+
+.widget_calendar .calendar_wrap {
+    text-align: center;
+
+	table {
+        width: 100%;
+
+        caption {
+            text-align: center;
+            caption-side: top;
+
+            &::before {
+                @include icon-font("\eecd"); // icofont-calendar
+                font-weight: bold;
+                margin-right: 3px;
+            }
+        }
+
+        td, th {
+            border: none;
+        }
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+
+
+.widget-area {
+    flex-basis: 360px;
+}
+
+
+
+/**
+ * <= 991px
+ */
+ @media (max-width: $bpmsdMax) {
+
+}
+
+/**
+ * >= 576px
+ */
+@media (min-width: $bpsd) {
+    
+}
+
+/**
+ * >= 768px
+ */
+@media (min-width: $bpmd) {
+    
+}
+
+/**
+ * >= 992px
+ */
+@media (min-width: $bpmsd) {
+    .site-main {
+        min-height: 350px;
+    }
+    #left-sidebar {
+        display: none;
+    }
+}
+
+/**
+ * >= 1024px
+ */
+@media (min-width: $bpld) {
+
+}
+

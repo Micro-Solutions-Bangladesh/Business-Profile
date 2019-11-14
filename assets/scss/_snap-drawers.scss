@@ -1,0 +1,117 @@
+
+#page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    background-color: $body-bg-color;;
+}
+
+.snap-drawers {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+.snap-drawer {
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    width: 265px;
+    height: auto;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+
+    background: $color__bg-top-nav;
+    color: $color__font-top-nav;
+
+    li {
+        border-top: 1px solid darken($color__bg-top-nav, 5%);
+        border-bottom: 1px solid lighten($color__bg-top-nav, 5%);
+    }
+
+    .snap-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: $default-gutter/2 0 0;
+        
+
+        a {
+            display: block;
+            padding: $small-gutter/2 $default-gutter/2;
+            color: $color__font-top-nav;
+            text-decoration: none;
+            @include transition-stuffs(background-color .6s ease);
+
+            &:hover {
+                background-color: lighten($color__bg-top-nav, 10%);
+            }
+        }
+        li {
+            flex: 1 1 100%;
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex !important;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+
+            a {
+                padding-left: $default-gutter;
+            }
+
+            ul {
+                a {
+                    padding-left: $default-gutter + $default-gutter/2;
+                }
+            }
+        }
+    }
+}
+.snap-drawer-left {
+    left: 0;
+    z-index: 1;
+}
+.snap-drawer-right {
+    right: 0;
+    z-index: 1;
+}
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+    display: none;
+}
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+    width: 100%;
+}
+
+#open-left {
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+

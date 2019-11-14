@@ -1,0 +1,43 @@
+.site-main.coming-soon {
+    width: 100%;
+    padding-right: $default-gutter/2;
+    padding-left: $default-gutter/2;
+    margin-right: auto;
+    margin-left: auto;
+
+    header, footer, article {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto $default-gutter/2;
+    }
+    header {
+        margin-top: $default-gutter;
+    }
+    footer {
+        margin-bottom: 0;
+    }
+
+    .text-logo-link {
+        font-size: $size__font-body*1.3;
+        font-family: $h1-font-family;
+        text-decoration: none;
+        color: $color__font-body;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .copyright-content {
+        display: none;
+    }
+
+    /**
+     * >= 992px
+     */
+    @media (min-width: $bpmsd) {
+        header, footer, article {
+            max-width: 80%;
+        }
+        .text-logo-link {
+            font-size: $size__font-body*2;
+        }
+    }
+}

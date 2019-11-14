@@ -1,0 +1,162 @@
+.content-header {
+    margin-bottom: $big-gutter/2;
+}
+
+
+
+.sticky {
+	display: block;
+}
+.updated:not(.published) {
+	display: none;
+}
+
+
+
+
+
+.entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    color: $color__font-body-lighten;
+    font-size: ($size__font-body - 2px);
+
+    a {
+        color: $color__font-body-lighten;
+    }
+
+    span {
+        margin-right: $small-gutter/2;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.post-thumbnail {
+    margin: 0 (-$default-gutter) $default-gutter;
+    text-align: center;
+
+    a {
+        display: block;
+    }
+}
+
+.entry-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: $color__font-body-lighten;
+
+    a {
+        color: $color__font-body-lighten;
+    }
+    span {
+        margin-right: $small-gutter;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.page-links {
+    margin-bottom: $default-gutter/2;
+    text-align: center;
+    font-weight: bold;
+
+    .section-label {
+        
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: $content-bg-color;
+    padding: 0 $default-gutter $default-gutter;
+    margin-bottom: $default-gutter;
+}
+
+
+
+.blog-feed {
+    .more-link {
+        font-weight: bold;
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        color: $color__theme-primary;
+    }
+}
+
+
+.page-template-default,
+.error404 {
+    #site-main {
+        margin-top: 0;
+    }
+    .site-main {
+        background: $content-bg-color;
+        padding-top: $default-gutter;
+
+        .page {
+            padding-left: $default-gutter/2;
+            padding-right: $default-gutter/2;
+        }
+    }
+    #footer {
+        margin-top: 0;
+    }
+}
+
+.error404 {
+    .error-404 {
+        padding-bottom: $default-gutter;
+        text-align: center;
+
+        .search-form {
+            width: 600px;
+            max-width: 100%;
+        }
+    }
+}
+
+/**
+ * <= 991px
+ */
+@media (max-width: $bpmsdMax) {
+
+}
+
+/**
+ * >= 576px
+ */
+@media (min-width: $bpsd) {
+    
+}
+
+/**
+ * >= 768px
+ */
+@media (min-width: $bpmd) {
+    
+}
+
+/**
+ * >= 992px
+ */
+@media (min-width: $bpmsd) {
+    .post-thumbnail {
+        
+    }
+}
+
+/**
+ * >= 1024px
+ */
+@media (min-width: $bpld) {
+
+}
+
