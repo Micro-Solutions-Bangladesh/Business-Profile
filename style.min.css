@@ -1,14 +1,14 @@
 /*!
 Theme Name: Business Profile
-Theme URI: https://MicroSolutionsBD.com/
-Author: MicroSolutionsBD.com
+Theme URI: https://demo.microsolutionsbd.com/business-profile/
+Author: microsolutions
 Author URI: https://MicroSolutionsBD.com/
 Description: A WordPress theme template for creating business profile of your company by Micro Solutions Bangladesh.
 Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: msbdbp
-Tags: business-profile, reposive-design, mobile-specific-sidebars, msbd-template, bootstrap, carousel, custom-header, custom-logo, custom-menu, featured-images, threaded-comments
+Tags: custom-header, custom-logo, custom-menu, featured-images, threaded-comments
 */body{background-color:#f5f5f5;color:#191919}
 a{color:#191919}
 a:hover,a:focus,a:active{color:#191919}
@@ -102,6 +102,7 @@ li li a .sf-sub-indicator{border-bottom:0 !important}
 .footer-nav ul li:last-child::after{display:none}
 #footer{background:#2d3290;color:#fff;margin-top:25px;padding-top:25px;padding-bottom:15px}
 #footer a{color:#fff}
+.bypostauthor{color:#191919}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;-webkit-clip-path:none;clip-path:none;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 #content[tabindex="-1"]:focus{outline:0}

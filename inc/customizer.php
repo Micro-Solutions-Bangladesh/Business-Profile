@@ -10,7 +10,8 @@ function msbdbp_customize_home_carousel( $wp_customize ) {
     $wp_customize->add_setting(
         'msbdbp_home_carousel_image1', 
         array(
-            'transport'   => 'refresh'
+            'transport'   => 'refresh',
+            'sanitize_callback' => 'esc_url',
         )
     );
     $wp_customize->add_control(
@@ -29,7 +30,8 @@ function msbdbp_customize_home_carousel( $wp_customize ) {
     $wp_customize->add_setting(
         'msbdbp_home_carousel_image2', 
         array(
-            'transport'   => 'refresh'
+            'transport'   => 'refresh',
+            'sanitize_callback' => 'esc_url',
         )
     );
     $wp_customize->add_control(
@@ -48,7 +50,8 @@ function msbdbp_customize_home_carousel( $wp_customize ) {
     $wp_customize->add_setting(
         'msbdbp_home_carousel_image3', 
         array(
-            'transport'   => 'refresh'
+            'transport'   => 'refresh',
+            'sanitize_callback' => 'esc_url',
         )
     );
     $wp_customize->add_control(

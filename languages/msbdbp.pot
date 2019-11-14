@@ -56,27 +56,27 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:106
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:102
+#: functions.php:108
 msgid "Add widgets for desktop sidebar here."
 msgstr ""
 
-#: functions.php:110
+#: functions.php:116
 msgid "Sidebar Mobile 1"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:118
 msgid "Add widgets for mobile 1st sidebar here."
 msgstr ""
 
-#: functions.php:120
+#: functions.php:126
 msgid "Sidebar Mobile 2"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:128
 msgid "Add widgets for mobile 2nd sidebar here."
 msgstr ""
 
@@ -85,58 +85,89 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/customizer.php:22
+#: inc/class-msbdbp-walker-comment.php:236
+msgid "Pingback:"
+msgstr ""
+
+#: inc/class-msbdbp-walker-comment.php:236, inc/class-msbdbp-walker-comment.php:380
+msgid "Edit"
+msgstr ""
+
+#: inc/class-msbdbp-walker-comment.php:263, inc/class-msbdbp-walker-comment.php:353
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/class-msbdbp-walker-comment.php:265, inc/class-msbdbp-walker-comment.php:355
+msgid "Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved."
+msgstr ""
+
+#. translators: %s: comment author link
+#: inc/class-msbdbp-walker-comment.php:281
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#. translators: 1: comment date, 2: comment time
+#. translators: 1: comment date, 2: comment time
+#: inc/class-msbdbp-walker-comment.php:294, inc/class-msbdbp-walker-comment.php:376
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/class-msbdbp-walker-comment.php:298
+msgid "(Edit)"
+msgstr ""
+
+#: inc/customizer.php:23
 msgid "Home Carousel Image 1"
 msgstr ""
 
-#: inc/customizer.php:41
+#: inc/customizer.php:43
 msgid "Home Carousel Image 2"
 msgstr ""
 
-#: inc/customizer.php:60
+#: inc/customizer.php:63
 msgid "Home Carousel Image 3"
 msgstr ""
 
-#: inc/customizer.php:70, inc/customizer.php:83, inc/customizer.php:96, inc/customizer.php:109, inc/customizer.php:122, inc/customizer.php:138, inc/customizer.php:151
+#: inc/customizer.php:73, inc/customizer.php:86, inc/customizer.php:99, inc/customizer.php:112, inc/customizer.php:125, inc/customizer.php:141, inc/customizer.php:154
 msgstr ""
 
-#: inc/customizer.php:76
+#: inc/customizer.php:79
 msgid "Facebook Profile"
 msgstr ""
 
-#: inc/customizer.php:89
+#: inc/customizer.php:92
 msgid "Twitter Profile"
 msgstr ""
 
-#: inc/customizer.php:102
+#: inc/customizer.php:105
 msgid "Pinterest Profile"
 msgstr ""
 
-#: inc/customizer.php:115
+#: inc/customizer.php:118
 msgid "Youtube Profile"
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:131
 msgid "LinkedIn Profile"
 msgstr ""
 
-#: inc/customizer.php:144
+#: inc/customizer.php:147
 msgid "Admin Email"
 msgstr ""
 
-#: inc/customizer.php:157
+#: inc/customizer.php:160
 msgid "Admin Phone"
 msgstr ""
 
-#: inc/customizer.php:179
+#: inc/customizer.php:182
 msgid "Home Carousel"
 msgstr ""
 
-#: inc/customizer.php:190
+#: inc/customizer.php:193
 msgid "Social Profiles"
 msgstr ""
 
-#: inc/customizer.php:201
+#: inc/customizer.php:204
 msgid "Admin Options"
 msgstr ""
 
@@ -182,6 +213,15 @@ msgstr ""
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:98, template-parts/content-page.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:237
+msgid "Search for:"
+msgstr ""
+
+#: inc/template-tags.php:238
+msgctxt "placeholder"
+msgid "Search &hellip;"
 msgstr ""
 
 #: page-tpl/coming-soon.php:3
