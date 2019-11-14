@@ -26,7 +26,9 @@
     </footer>    
 </div>
 <!-- /#page -->
-<div id="goTop"></div>
+<div id="goTop" class="hidegt">
+    <i class="icofont-block-up"></i>
+</div>
 
 <?php wp_footer(); ?>
 </body>

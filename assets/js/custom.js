@@ -2,8 +2,6 @@
 
 (function ($) {
   $(document).ready(function ($) {
-    // $('.carousel').carousel();
-
     /**
      * Superfish
      */
@@ -61,17 +59,16 @@
      * Go Top Button
      */
 
-    jQuery('#goTop').click(function () {
-      jQuery('body,html').animate({
+    $('#goTop').click(function () {
+      $("#page").animate({
         scrollTop: 0
       }, 1000);
     });
-    jQuery("#goTop").html('<i class="icofont-block-up"></i>').addClass("hidegt");
-    jQuery(window).scroll(function () {
-      if (jQuery(this).scrollTop() < 100) {
-        jQuery("#goTop").addClass("hidegt").removeClass("showgt");
+    $("#page").scroll(function () {
+      if ($(this).scrollTop() < 100) {
+        $("#goTop").addClass("hidegt").removeClass("showgt");
       } else {
-        jQuery("#goTop").removeClass("hidegt").addClass("showgt");
+        $("#goTop").removeClass("hidegt").addClass("showgt");
       }
     });
   });
