@@ -157,7 +157,7 @@ if ( ! function_exists( 'msbdbp_the_custom_logo' ) ) :
         if( empty($html) ) {
             $html = sprintf(
                 '<a href="%s" class="text-logo-link" title="%s">%s</a>',
-                get_bloginfo("wpurl"),
+                esc_url( site_url() ),
                 get_bloginfo( 'description', 'display' ),
                 get_bloginfo("name")
             );
@@ -234,8 +234,8 @@ if ( ! function_exists( 'msbdbp_get_search_form' ) ) :
     function msbdbp_get_search_form( $form ) {
         $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <label>
-                    <span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
-                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" />
+                    <span class="screen-reader-text">' . __( 'Search for:', 'msbdbp' ) . '</span>
+                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'msbdbp' ) . '" value="' . get_search_query() . '" name="s" />
                 </label>
                 <button type="submit" class="search-submit"><i class="icofont-search-2"></i></button>
             </form>';

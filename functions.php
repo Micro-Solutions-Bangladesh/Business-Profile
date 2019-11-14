@@ -75,6 +75,12 @@ if ( ! function_exists( 'msbdbp_setup' ) ) :
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+        // Set content-width.
+        global $content_width;
+        if ( ! isset( $content_width ) ) {
+            $content_width = 580;
+        }
+    
 		/**
 		 * Add support for core custom logo.
 		 *
@@ -151,6 +157,20 @@ function msbdbp_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'msbdbp_scripts' );
+
+/**
+ * Enqueue editor styles.
+ */
+function msbdbp_editor_styles() {
+	$classic_editor_styles = array(
+		'/assets/css/editor-style.css',
+	);
+
+	add_editor_style( $classic_editor_styles );
+}
+
+add_action( 'init', 'msbdbp_editor_styles' );
+
 
 /**
  * Implement the Custom Header feature.
