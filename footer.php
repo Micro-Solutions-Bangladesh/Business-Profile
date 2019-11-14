@@ -20,13 +20,15 @@
             </div>
             <div class="row justify-content-between">
                 <div class="col-auto copyright">Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>.</div>
-                <div class="col-auto credit">Design and Developed By <a href="https://microsolutionsbd.com/" title="Micro Solutions Bangladesh" target="_blank">MSBD</a></div>
+                <div class="col-auto credit">A WrodPress theme By <a href="https://microsolutionsbd.com/" title="Micro Solutions Bangladesh" target="_blank">MSBD</a></div>
             </div>
         </div>
     </footer>    
 </div>
 <!-- /#page -->
-<div id="goTop"></div>
+<div id="goTop" class="hidegt">
+    <i class="icofont-block-up"></i>
+</div>
 
 <?php wp_footer(); ?>
 </body>
