@@ -64,7 +64,10 @@ if ( ! function_exists( 'msbdbp_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
-		) );
+        ) );
+        
+        // Add support for editor styles.
+        add_theme_support( 'editor-styles' );
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'msbdbp_custom_background_args', array(
