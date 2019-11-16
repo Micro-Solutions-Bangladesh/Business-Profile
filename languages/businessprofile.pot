@@ -24,55 +24,55 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: comments.php:48
+#: comments.php:51
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:56
+#: comments.php:60
 msgid "Name"
 msgstr ""
 
-#: comments.php:58
+#: comments.php:62
 msgid "Email"
 msgstr ""
 
-#: comments.php:60
+#: comments.php:64
 msgid "Website"
 msgstr ""
 
-#: comments.php:66
+#: comments.php:70
 msgid "Comment"
 msgstr ""
 
-#: functions.php:53
+#: functions.php:47
 msgid "Primary"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:48
 msgid "Footer"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:103
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:111
+#: functions.php:105
 msgid "Add widgets for desktop sidebar here."
 msgstr ""
 
-#: functions.php:119
+#: functions.php:113
 msgid "Sidebar Mobile 1"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:115
 msgid "Add widgets for mobile 1st sidebar here."
 msgstr ""
 
-#: functions.php:129
+#: functions.php:123
 msgid "Sidebar Mobile 2"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:125
 msgid "Add widgets for mobile 2nd sidebar here."
 msgstr ""
 
@@ -233,7 +233,7 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: page-tpl/full-layout-empty.php:32, template-parts/content-page.php:21, template-parts/content.php:50
+#: page-tpl/full-layout-empty.php:32, template-parts/content-page.php:21, template-parts/content.php:49
 msgid "Pages:"
 msgstr ""
 
@@ -255,6 +255,6 @@ msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searc
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:38
+#: template-parts/content.php:37
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span><span class=\"icofont-long-arrow-right\"></span>"
 msgstr ""
