@@ -1,10 +1,10 @@
 /**
- * WPGulp Configuration File
+ * businessprofile Configuration File
  *
  * 1. Edit the variables as per your project requirements.
  * 2. In paths you can add <<glob or array of globs>>.
  *
- * @package WPGulp
+ * @package businessprofile
  */
 
 module.exports = {
@@ -43,10 +43,10 @@ module.exports = {
 	watchPhp: './**/*.php', // Path to all PHP files.
 
 	// Translation options.
-	textDomain: 'msbdbp', // Your textdomain here.
-	translationFile: 'msbdbp.pot', // Name of the translation file.
+	textDomain: 'businessprofile', // Your textdomain here.
+	translationFile: 'businessprofile.pot', // Name of the translation file.
 	translationDestination: './languages', // Where to save the translation files.
-	packageName: 'msbdbp', // Package name.
+	packageName: 'businessprofile', // Package name.
 	bugReport: 'https://github.com/Micro-Solutions-Bangladesh/business-profile', // Where can users report bugs.
 	lastTranslator: 'Shah Alom <shahalom.amin@gmail.com>', // Last translator Email ID.
 	team: 'ShahAlom <shahalom.amin@gmail.com>', // Team's Email ID.

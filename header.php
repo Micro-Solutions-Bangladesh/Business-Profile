@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package msbdbp
+ * @package businessprofile
  */
 
 ?>
@@ -32,12 +32,12 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="logo">
-                    <?php msbdbp_the_custom_logo(); ?>
+                    <?php businessprofile_the_custom_logo(); ?>
                 </div>
                 
                 <div class="quick-contacts">
                     <div class="social with-color">
-                        <?php echo msbdbp_get_social_links(); ?>
+                        <?php echo businessprofile_get_social_links(); ?>
                     </div>
                 </div>
             </div>

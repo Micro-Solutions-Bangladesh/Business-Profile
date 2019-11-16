@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package msbdbp
+ * @package businessprofile
  */
 ?>
 <?php
@@ -15,8 +15,8 @@
 
     if( is_front_page() && !is_home() ) {
         
-        $msbdbp_image1 = get_theme_mod( 'msbdbp_home_carousel_image1' );
-        if( $msbdbp_image1 ) {
+        $businessprofile_image1 = get_theme_mod( 'businessprofile_home_carousel_image1' );
+        if( $businessprofile_image1 ) {
             $carousel_indicators[] = sprintf(
                 '<li data-target="#carouselHome" data-slide-to="%s" class="active"></li>',
                 $counter
@@ -30,15 +30,15 @@
             $carousel_item_caption = '';
             $carousel_item[] = sprintf(
                 '<div class="carousel-item active">%s %s</div>',
-                msbdbp_attachment_url_to_post_thumbnail($msbdbp_image1),
+                businessprofile_attachment_url_to_post_thumbnail($businessprofile_image1),
                 $carousel_item_caption
             );
 
             $counter++;
         }
 
-        $msbdbp_image2 = get_theme_mod( 'msbdbp_home_carousel_image2' );
-        if( $msbdbp_image2 ) {
+        $businessprofile_image2 = get_theme_mod( 'businessprofile_home_carousel_image2' );
+        if( $businessprofile_image2 ) {
             $carousel_indicators[] = sprintf(
                 '<li data-target="#carouselHome" data-slide-to="%s"></li>',
                 $counter
@@ -46,14 +46,14 @@
             
             $carousel_item[] = sprintf(
                 '<div class="carousel-item">%s %s</div>',
-                msbdbp_attachment_url_to_post_thumbnail($msbdbp_image2),
+                businessprofile_attachment_url_to_post_thumbnail($businessprofile_image2),
                 ''
             );
             $counter++;
         }
 
-        $msbdbp_image3 = get_theme_mod( 'msbdbp_home_carousel_image3' );
-        if( $msbdbp_image3 ) {
+        $businessprofile_image3 = get_theme_mod( 'businessprofile_home_carousel_image3' );
+        if( $businessprofile_image3 ) {
             $carousel_indicators[] = sprintf(
                 '<li data-target="#carouselHome" data-slide-to="%s"></li>',
                 $counter
@@ -61,7 +61,7 @@
             
             $carousel_item[] = sprintf(
                 '<div class="carousel-item">%s %s</div>',
-                msbdbp_attachment_url_to_post_thumbnail($msbdbp_image3),
+                businessprofile_attachment_url_to_post_thumbnail($businessprofile_image3),
                 ''
             );
             $counter++;
