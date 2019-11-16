@@ -6,7 +6,6 @@
  *
  * @package businessprofile
  */
-
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php businessprofile_post_thumbnail(); ?>

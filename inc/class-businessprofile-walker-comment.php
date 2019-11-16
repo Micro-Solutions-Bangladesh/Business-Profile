@@ -8,7 +8,7 @@
  */
 
 
-class MSBDBP_Walker_Comment extends Walker {
+class BUSINESSPROFILE_Walker_Comment extends Walker {
  
     /**
      * What the class handles.
