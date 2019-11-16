@@ -7,12 +7,6 @@
  * @package businessprofile
  */
 
-if ( WP_DEBUG ) {
-    define( 'BUSINESSPROFILE_VERSION', time() );
-} else {
-    define( 'BUSINESSPROFILE_VERSION', wp_get_theme()->get( 'Version' ) );
-}
-
 if ( ! function_exists( 'businessprofile_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -141,19 +135,24 @@ add_action( 'widgets_init', 'businessprofile_widgets_init' );
  * Enqueue scripts and styles.
  */
 function businessprofile_scripts() {
-    wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/bootstrap-4.3.1/css/bootstrap.min.css" ), null, BUSINESSPROFILE_VERSION );
+    $businessprofile_version = wp_get_theme()->get( 'Version' );
+    if ( WP_DEBUG ) {
+        $businessprofile_version = time();
+    }
 
-    wp_enqueue_style( 'icofont', get_theme_file_uri( "/assets/icofont/icofont.min.css" ), null, BUSINESSPROFILE_VERSION );
+    wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/bootstrap-4.3.1/css/bootstrap.min.css" ), null, '4.3.1' );
 
-	wp_enqueue_style( 'businessprofile-style', get_stylesheet_uri(), null, BUSINESSPROFILE_VERSION );
+    wp_enqueue_style( 'icofont', get_theme_file_uri( "/assets/icofont/icofont.min.css" ), null, '1.0.1' );
+
+	wp_enqueue_style( 'businessprofile-style', get_stylesheet_uri(), null, $businessprofile_version );
     
-    wp_enqueue_script( 'snap', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), BUSINESSPROFILE_VERSION, true );
+    wp_enqueue_script( 'bootstrap-js', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), '4.3.1', true );
 
-    wp_enqueue_script( 'superfish', get_theme_file_uri( "/assets/superfish/js/superfish.min.js" ), array( "jquery" ), BUSINESSPROFILE_VERSION, true );
+    wp_enqueue_script( 'superfish-js', get_theme_file_uri( "/assets/superfish/js/superfish.min.js" ), array( "jquery" ), '1.7.10', true );
 
-    wp_enqueue_script( 'snap-js', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), BUSINESSPROFILE_VERSION, true );
+    wp_enqueue_script( 'snap-js', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), '1.9.2', true );
 
-    wp_enqueue_script( 'businessprofile-js', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "superfish", "snap" ), BUSINESSPROFILE_VERSION, true );
+    wp_enqueue_script( 'businessprofile-js', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "superfish-js", "snap-js", "bootstrap-js" ), $businessprofile_version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
