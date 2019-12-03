@@ -1,19 +1,13 @@
 <?php
 /**
- * msbdbp functions and definitions
+ * businessprofile functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package msbdbp
+ * @package businessprofile
  */
 
-if ( WP_DEBUG ) {
-    define( 'MSBDBP_VERSION', time() );
-} else {
-    define( 'MSBDBP_VERSION', wp_get_theme()->get( 'Version' ) );
-}
-
-if ( ! function_exists( 'msbdbp_setup' ) ) :
+if ( ! function_exists( 'businessprofile_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -21,14 +15,14 @@ if ( ! function_exists( 'msbdbp_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function msbdbp_setup() {
+	function businessprofile_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on msbdbp, use a find and replace
-		 * to change 'msbdbp' to the name of your theme in all the template files.
+		 * If you're building a theme based on businessprofile, use a find and replace
+		 * to change 'businessprofile' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'msbdbp', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'businessprofile', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -50,8 +44,8 @@ if ( ! function_exists( 'msbdbp_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-            'menu-1' => esc_html__( 'Primary', 'msbdbp' ),
-            'menu-footer' => esc_html__( 'Footer', 'msbdbp' ),
+            'menu-1' => esc_html__( 'Primary', 'businessprofile' ),
+            'menu-footer' => esc_html__( 'Footer', 'businessprofile' ),
 		) );
 
 		/*
@@ -64,10 +58,13 @@ if ( ! function_exists( 'msbdbp_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
-		) );
+        ) );
+        
+        // Add support for editor styles.
+        add_theme_support( 'editor-styles' );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'msbdbp_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'businessprofile_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -94,18 +91,18 @@ if ( ! function_exists( 'msbdbp_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'msbdbp_setup' );
+add_action( 'after_setup_theme', 'businessprofile_setup' );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function msbdbp_widgets_init() {
+function businessprofile_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'msbdbp' ),
+		'name'          => esc_html__( 'Sidebar', 'businessprofile' ),
 		'id'            => 'sidebar-desktop',
-		'description'   => esc_html__( 'Add widgets for desktop sidebar here.', 'msbdbp' ),
+		'description'   => esc_html__( 'Add widgets for desktop sidebar here.', 'businessprofile' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -113,9 +110,9 @@ function msbdbp_widgets_init() {
     ) );
 
     register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Mobile 1', 'msbdbp' ),
+		'name'          => esc_html__( 'Sidebar Mobile 1', 'businessprofile' ),
 		'id'            => 'sidebar-mobile-1',
-		'description'   => esc_html__( 'Add widgets for mobile 1st sidebar here.', 'msbdbp' ),
+		'description'   => esc_html__( 'Add widgets for mobile 1st sidebar here.', 'businessprofile' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -123,45 +120,50 @@ function msbdbp_widgets_init() {
 	) );
 
     register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Mobile 2', 'msbdbp' ),
+		'name'          => esc_html__( 'Sidebar Mobile 2', 'businessprofile' ),
 		'id'            => 'sidebar-mobile-2',
-		'description'   => esc_html__( 'Add widgets for mobile 2nd sidebar here.', 'msbdbp' ),
+		'description'   => esc_html__( 'Add widgets for mobile 2nd sidebar here.', 'businessprofile' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'msbdbp_widgets_init' );
+add_action( 'widgets_init', 'businessprofile_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function msbdbp_scripts() {
-    wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/bootstrap-4.3.1/css/bootstrap.min.css" ), null, MSBDBP_VERSION );
+function businessprofile_scripts() {
+    $businessprofile_version = wp_get_theme()->get( 'Version' );
+    if ( WP_DEBUG ) {
+        $businessprofile_version = time();
+    }
 
-    wp_enqueue_style( 'icofont', get_theme_file_uri( "/assets/icofont/icofont.min.css" ), null, MSBDBP_VERSION );
+    wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/bootstrap-4.3.1/css/bootstrap.min.css" ), null, '4.3.1' );
 
-	wp_enqueue_style( 'msbdbp-style', get_stylesheet_uri(), null, MSBDBP_VERSION );
+    wp_enqueue_style( 'icofont', get_theme_file_uri( "/assets/icofont/icofont.min.css" ), null, '1.0.1' );
+
+	wp_enqueue_style( 'businessprofile-style', get_stylesheet_uri(), null, $businessprofile_version );
     
-    wp_enqueue_script( 'snap', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), MSBDBP_VERSION, true );
+    wp_enqueue_script( 'bootstrap-js', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), '4.3.1', true );
 
-    wp_enqueue_script( 'superfish', get_theme_file_uri( "/assets/superfish/js/superfish.min.js" ), array( "jquery" ), MSBDBP_VERSION, true );
+    wp_enqueue_script( 'superfish-js', get_theme_file_uri( "/assets/superfish/js/superfish.min.js" ), array( "jquery" ), '1.7.10', true );
 
-    wp_enqueue_script( 'snap-js', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), MSBDBP_VERSION, true );
+    wp_enqueue_script( 'snap-js', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), '1.9.2', true );
 
-    wp_enqueue_script( 'msbdbp-js', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "superfish", "snap" ), MSBDBP_VERSION, true );
+    wp_enqueue_script( 'businessprofile-js', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "superfish-js", "snap-js", "bootstrap-js" ), $businessprofile_version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'msbdbp_scripts' );
+add_action( 'wp_enqueue_scripts', 'businessprofile_scripts' );
 
 /**
  * Enqueue editor styles.
  */
-function msbdbp_editor_styles() {
+function businessprofile_editor_styles() {
 	$classic_editor_styles = array(
 		'/assets/css/editor-style.css',
 	);
@@ -169,7 +171,7 @@ function msbdbp_editor_styles() {
 	add_editor_style( $classic_editor_styles );
 }
 
-add_action( 'init', 'msbdbp_editor_styles' );
+add_action( 'init', 'businessprofile_editor_styles' );
 
 
 /**
@@ -202,4 +204,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * 
  */
-require get_template_directory() . '/inc/class-msbdbp-walker-comment.php';
+require get_template_directory() . '/inc/class-businessprofile-walker-comment.php';

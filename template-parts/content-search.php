@@ -4,12 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package msbdbp
+ * @package businessprofile
  */
-
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php msbdbp_post_thumbnail(); ?>
+    <?php businessprofile_post_thumbnail(); ?>
 
     <header class="content-header">
         <?php
@@ -20,8 +19,8 @@
         ?>
                 <div class="entry-meta">
                     <?php
-                    msbdbp_posted_on();
-                    msbdbp_posted_by();
+                    businessprofile_posted_on();
+                    businessprofile_posted_by();
                     ?>
                 </div><!-- .entry-meta -->
         <?php endif; ?>

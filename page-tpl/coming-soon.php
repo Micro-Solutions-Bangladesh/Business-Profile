@@ -2,7 +2,7 @@
 /*
  * Template Name: Coming Soon Template
  *
- * @package msbdbp
+ * @package businessprofile
  */
 
 get_header('empty');
@@ -13,7 +13,7 @@ get_header('empty');
         the_post();
         ?>
         <header class="header-brand">
-            <?php msbdbp_the_custom_logo(); ?>
+            <?php businessprofile_the_custom_logo(); ?>
         </header>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php the_content(); ?>
