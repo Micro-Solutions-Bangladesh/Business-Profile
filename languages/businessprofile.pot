@@ -24,24 +24,63 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: comments.php:51
+#: comments.php:31
+msgid "Leave a comment"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:34
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:38
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:70
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:60
+#: comments.php:79
 msgid "Name"
 msgstr ""
 
-#: comments.php:62
+#: comments.php:81
 msgid "Email"
 msgstr ""
 
-#: comments.php:64
+#: comments.php:83
 msgid "Website"
 msgstr ""
 
-#: comments.php:70
+#: comments.php:89
 msgid "Comment"
+msgstr ""
+
+#: footer.php:23, page-tpl/coming-soon.php:24
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:24, page-tpl/coming-soon.php:25
+msgctxt "copyright date format"
+msgid "Y"
+msgstr ""
+
+#: footer.php:28, page-tpl/coming-soon.php:29
+msgid "Powered by"
+msgstr ""
+
+#: footer.php:28, page-tpl/coming-soon.php:29
+msgid "Micro Solutions Bangladesh"
+msgstr ""
+
+#: footer.php:29, page-tpl/coming-soon.php:30
+msgid "MSBD"
 msgstr ""
 
 #: functions.php:47
@@ -155,15 +194,15 @@ msgstr ""
 msgid "Admin Phone"
 msgstr ""
 
-#: inc/customizer.php:182
+#: inc/customizer.php:187
 msgid "Home Carousel"
 msgstr ""
 
-#: inc/customizer.php:193
+#: inc/customizer.php:198
 msgid "Social Profiles"
 msgstr ""
 
-#: inc/customizer.php:204
+#: inc/customizer.php:209
 msgid "Admin Options"
 msgstr ""
 
