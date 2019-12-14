@@ -171,7 +171,12 @@ function businessprofile_customize_admin_settings( $wp_customize ) {
 function businessprofile_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+    
+    $wp_customize->remove_section('background_image');
+    $wp_customize->remove_section('header_image');
+
+    $wp_customize->remove_control('header_textcolor');
+    $wp_customize->remove_control('background_color');
 
     /**
 	 * Home Carousel
