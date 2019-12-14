@@ -34,9 +34,9 @@
     </footer>    
 </div>
 <!-- /#page -->
-<div id="goTop" class="hidegt">
+<buttom id="goTop" class="hidegt">
     <i class="icofont-block-up"></i>
-</div>
+</button>
 
 <?php wp_footer(); ?>
 </body>
