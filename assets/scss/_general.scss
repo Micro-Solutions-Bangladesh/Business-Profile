@@ -107,3 +107,12 @@
 @media (min-width: $bpld) {
 
 }
+
+/**
+ * >= 1200px
+ */
+@media (min-width: $bpxld) {
+    .container {
+        max-width: $bpxld;
+    }
+}

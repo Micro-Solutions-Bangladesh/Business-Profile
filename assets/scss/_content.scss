@@ -13,7 +13,11 @@
 
 
 
-
+.entry-content {
+	h1, h2, h3, h4 {
+        clear: both;
+    }
+}
 
 .entry-meta {
     display: flex;
@@ -100,6 +104,7 @@ article {
     .site-main {
         background: $content-bg-color;
         padding-top: $default-gutter;
+        overflow: hidden;
 
         .page {
             padding-left: $default-gutter/2;
