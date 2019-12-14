@@ -20,6 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <div id="page">
     <section class="header-bar">
         <div class="container">
