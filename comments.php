@@ -23,11 +23,30 @@ if ( post_password_required() ) {
 	<?php
     if ( have_comments() ) :
         $businessprofile_comment_count = get_comments_number();
-        $comments_title = ($businessprofile_comment_count>1) ? "{$businessprofile_comment_count} Comments" : "Very first comment";
         ?>
         <div class="title-wrap">
             <h3 class="comments-title">
-                <?php _e( $comments_title, 'businessprofile' ); ?>
+                <?php
+                    if ( ! have_comments() ) {
+                        _e( 'Leave a comment', 'businessprofile' );
+                    } elseif ( '1' === $businessprofile_comment_count ) {
+                        /* translators: %s: post title */
+                        printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'businessprofile' ), esc_html( get_the_title() ) );
+                    } else {
+                        echo sprintf(
+                            /* translators: 1: number of comments, 2: post title */
+                            _nx(
+                                '%1$s reply on &ldquo;%2$s&rdquo;',
+                                '%1$s replies on &ldquo;%2$s&rdquo;',
+                                $businessprofile_comment_count,
+                                'comments title',
+                                'businessprofile'
+                            ),
+                            number_format_i18n( $businessprofile_comment_count ),
+                            esc_html( get_the_title() )
+                        );
+                    }
+                ?>
             </h3>
         </div>
 		<ol class="comment-list">
