@@ -20,11 +20,20 @@ get_header('empty');
         </article>
         <footer>
             <div class="copyright-content">
-                <span class="copyright">Copyright &copy; <?php echo date("Y"); ?> <?php echo get_bloginfo("name"); ?> All Rights Reserved.</span> <span class="credit">Design and Developed By <a href="https://microsolutionsbd.com/" title="" target="_blank">MSBD</a></span>
+                <span class="copyright">
+                    <?php _e( 'Copyright', 'businessprofile'); ?> &copy; <?php echo date_i18n(
+                        _x( 'Y', 'copyright date format', 'businessprofile' )
+                    ); ?> <?php bloginfo('name'); ?>.
+                </span> 
+                <span class="credit">
+                    <?php _e( 'Powered by', 'businessprofile'); ?> <a href="https://microsolutionsbd.com/" title="<?php _e( 'Micro Solutions Bangladesh', 'businessprofile'); ?>" target="_blank">
+                        <?php _e( 'MSBD', 'businessprofile'); ?>
+                    </a>
+                </span>
             </div>
         </footer>
         <?php
-    endwhile; // End of the loop.
+    endwhile;
     ?>
     </main>
 <?php

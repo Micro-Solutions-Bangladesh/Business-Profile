@@ -1,4 +1,4 @@
-</div>
+            </div>
         </div>
     </div>
     <!-- /#site-main -->
@@ -19,8 +19,16 @@
                 </div>
             </div>
             <div class="row justify-content-between">
-                <div class="col-auto copyright">Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>.</div>
-                <div class="col-auto credit">A WrodPress theme By <a href="https://microsolutionsbd.com/" title="Micro Solutions Bangladesh" target="_blank">MSBD</a></div>
+                <div class="col-auto copyright">
+                    <?php _e( 'Copyright', 'businessprofile'); ?> &copy; <?php echo date_i18n(
+                        _x( 'Y', 'copyright date format', 'businessprofile' )
+                    ); ?> <?php bloginfo('name'); ?>.
+                </div>
+                <div class="col-auto credit">
+                    <?php _e( 'Powered by', 'businessprofile'); ?> <a href="https://microsolutionsbd.com/" title="<?php _e( 'Micro Solutions Bangladesh', 'businessprofile'); ?>" target="_blank">
+                        <?php _e( 'MSBD', 'businessprofile'); ?>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>    
