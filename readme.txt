@@ -4,8 +4,8 @@ Author: microsolutions
 Author URI: https://MicroSolutionsBD.com/
 Contributors: microsolutions, shahalom
 Description: This is the free version of Business Profile WordPress theme, We at Micro Solutions Bangladesh are planning to create a pro version with lots of usefull features.  This theme's versatility allows it to be used in a wide range of industries, making it the perfect theme if you own a business. No matter if it's a restaurant, beauty salon, house rental, hotel, coffee shop, or any other type of small business, this theme will fit your needs perfectly. With the Style Manager system you can customize your site's overall color palettes choosing from a set of predefined, carefully crafted palettes.
-Version: 1.0.2
-Stable tag: 1.0.2
+Version: 1.0.3
+Stable tag: 1.0.3
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: businessprofile
@@ -33,6 +33,13 @@ Following few sites are currently using the Business Profile theme:
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.0.3 =
+* Update comments box title in comments template
+* Fix escaping in footer section
+* Remove unused customizer settings
+* Update language pot file
+* Fix go top button color
 
 = 1.0.2 =
 * Refactor textdomain names from msbdbp to businessprofile.
