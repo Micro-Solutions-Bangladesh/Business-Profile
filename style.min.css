@@ -94,12 +94,12 @@ li li a .sf-sub-indicator{border-bottom:0 !important}
 .first-head li:hover>a{color:red}
 .sf-menu li.back{position:absolute;padding:0 !important;margin:0 !important;top:36px;overflow:inherit !important}
 .sf-menu li.back .left{position:absolute;width:0 !important;padding:0 !important;margin:0 !important;height:0 !important;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff;left:42%}
-.hidegt{bottom:-100px !important}
-.showgt{bottom:75px !important}
-#goTop{position:fixed;right:32px;z-index:1000;bottom:-100px;border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;cursor:pointer;-webkit-transition:all .4s ease;transition:all .4s ease}
-#goTop i{display:block;font-size:50px}
+#goTop{font-size:50px;position:fixed;right:32px;z-index:1000;bottom:-100px;cursor:pointer;color:#2d3290;border-radius:3px;-webkit-transition:color .5s ease;transition:color .5s ease}
+#goTop i{display:block}
+#goTop:hover{opacity:.9}
 #goTop:hover i{-webkit-animation:fadeInUp .4s;animation:fadeInUp .4s}
-#goTop:hover{opacity:.9;background:#2d3290;color:#fff}
+#goTop.hidegt{bottom:-100px !important}
+#goTop.showgt{bottom:75px !important}
 .footer-nav ul{padding:0;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;list-style-type:none}
 .footer-nav ul li::after{content:"/";padding:0 15px}
 .footer-nav ul li:last-child::after{display:none}

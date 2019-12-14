@@ -1,35 +1,36 @@
 
 /*= Scroll to Top =*/
-.hidegt {
-    bottom: -100px !important;
-}
-.showgt {
-    bottom:75px !important;
-}
 #goTop {
+    font-size: 50px;
     position: fixed;
     right: 32px;
     z-index: 1000;
     bottom: -100px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
     cursor:pointer;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-#goTop i {
-    display: block;
-    font-size: 50px;
-}
-#goTop:hover i {
-    -webkit-animation: fadeInUp 0.4s;
-    animation: fadeInUp 0.4s
-}
-#goTop:hover {
-    opacity: 0.9;
-    background: $color__theme-primary;
-    color: $color_white;
+    color: $color__theme-primary;
+
+    @include border-radius(3px);
+    @include transition-stuffs(color .5s ease);
+
+    i {
+        display: block;
+    }
+
+    &:hover {
+        opacity: 0.9;
+
+        i {
+            -webkit-animation: fadeInUp 0.4s;
+            animation: fadeInUp 0.4s
+        }
+    }
+
+    &.hidegt {
+        bottom: -100px !important;
+    }
+    &.showgt {
+        bottom:75px !important;
+    }
 }
 
 .footer-nav {
