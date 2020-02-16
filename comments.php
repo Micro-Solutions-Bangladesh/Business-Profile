@@ -22,14 +22,14 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 	<?php
     if ( have_comments() ) :
-        $businessprofile_comment_count = get_comments_number();
+        $business_profile_comment_count = get_comments_number();
         ?>
         <div class="title-wrap">
             <h3 class="comments-title">
                 <?php
                     if ( ! have_comments() ) {
                         _e( 'Leave a comment', 'business-profile' );
-                    } elseif ( '1' === $businessprofile_comment_count ) {
+                    } elseif ( '1' === $business_profile_comment_count ) {
                         /* translators: %s: post title */
                         printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'business-profile' ), esc_html( get_the_title() ) );
                     } else {
@@ -38,11 +38,11 @@ if ( post_password_required() ) {
                             _nx(
                                 '%1$s reply on &ldquo;%2$s&rdquo;',
                                 '%1$s replies on &ldquo;%2$s&rdquo;',
-                                $businessprofile_comment_count,
+                                $business_profile_comment_count,
                                 'comments title',
                                 'business-profile'
                             ),
-                            number_format_i18n( $businessprofile_comment_count ),
+                            number_format_i18n( $business_profile_comment_count ),
                             esc_html( get_the_title() )
                         );
                     }

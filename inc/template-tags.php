@@ -6,11 +6,11 @@
  *
  * @package business-profile
  */
-if ( ! function_exists( 'businessprofile_posted_on' ) ) :
+if ( ! function_exists( 'business_profile_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function businessprofile_posted_on() {
+	function business_profile_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -34,11 +34,11 @@ if ( ! function_exists( 'businessprofile_posted_on' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'businessprofile_posted_by' ) ) :
+if ( ! function_exists( 'business_profile_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function businessprofile_posted_by() {
+	function business_profile_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'business-profile' ),
@@ -50,11 +50,11 @@ if ( ! function_exists( 'businessprofile_posted_by' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'businessprofile_entry_footer' ) ) :
+if ( ! function_exists( 'business_profile_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function businessprofile_entry_footer() {
+	function business_profile_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
@@ -110,14 +110,14 @@ if ( ! function_exists( 'businessprofile_entry_footer' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'businessprofile_post_thumbnail' ) ) :
+if ( ! function_exists( 'business_profile_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function businessprofile_post_thumbnail() {
+	function business_profile_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
@@ -148,8 +148,8 @@ endif;
 /**
  *
  */
-if ( ! function_exists( 'businessprofile_the_custom_logo' ) ) :
-    function businessprofile_the_custom_logo($echo=true) {
+if ( ! function_exists( 'business_profile_the_custom_logo' ) ) :
+    function business_profile_the_custom_logo($echo=true) {
         $html = "";
         if ( current_theme_supports( 'custom-logo' ) ) {
             $html = get_custom_logo();
@@ -174,11 +174,11 @@ endif;
 /**
  * 
  */
-if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
-    function businessprofile_get_social_links($startWith='', $endWith='', $sepaerator='') {
+if ( ! function_exists( 'business_profile_get_social_links' ) ) :
+    function business_profile_get_social_links($startWith='', $endWith='', $sepaerator='') {
         $items = array();
 
-        $facebook = get_theme_mod( 'businessprofile_social_facebook' );
+        $facebook = get_theme_mod( 'business_profile_social_facebook' );
         if ( !empty($facebook) ) {
             $items[] = sprintf(
                 '<a href="%s" class="facebook" title="'. __("Follow Us on Facebook", 'business-profile') .'" target="_blank"><i class="icofont-facebook"></i></a>',
@@ -186,7 +186,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
             );
         }
 
-        $twitter = get_theme_mod( 'businessprofile_social_twitter' );
+        $twitter = get_theme_mod( 'business_profile_social_twitter' );
         if ( !empty($twitter) ) {
             $items[] = sprintf(
                 '<a href="%s" class="twitter" title="'. __("Follow Us on Twitter", 'business-profile') .'" target="_blank"><i class="icofont-twitter"></i></a>',
@@ -194,7 +194,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
             );
         }
 
-        $pinterest = get_theme_mod( 'businessprofile_social_pinterest' );
+        $pinterest = get_theme_mod( 'business_profile_social_pinterest' );
         if ( !empty($pinterest) ) {
             $items[] = sprintf(
                 '<a href="%s" class="pinterest" title="'. __("Follow Us on Pinterest", 'business-profile') .'" target="_blank"><i class="icofont-pinterest"></i></a>',
@@ -202,7 +202,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
             );
         }
 
-        $youtube = get_theme_mod( 'businessprofile_social_youtube' );
+        $youtube = get_theme_mod( 'business_profile_social_youtube' );
         if ( !empty($youtube) ) {
             $items[] = sprintf(
                 '<a href="%s" class="youtube" title="'. __("Follow Us on Youtube", 'business-profile') .'" target="_blank"><i class="icofont-youtube"></i></a>',
@@ -210,7 +210,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
             );
         }
 
-        $linkedin = get_theme_mod( 'businessprofile_social_linkedin' );
+        $linkedin = get_theme_mod( 'business_profile_social_linkedin' );
         if ( !empty($linkedin) ) {
             $items[] = sprintf(
                 '<a href="%s" class="linkedin" title="'. __("Follow Us on Linkedin", 'business-profile') .'" target="_blank"><i class="icofont-linkedin"></i></a>',
@@ -230,8 +230,8 @@ endif;
 /**
  * 
  */
-if ( ! function_exists( 'businessprofile_get_search_form' ) ) :
-    function businessprofile_get_search_form( $form ) {
+if ( ! function_exists( 'business_profile_get_search_form' ) ) :
+    function business_profile_get_search_form( $form ) {
         $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <label class="col">
                     <span class="screen-reader-text">' . __( 'Search for:', 'business-profile' ) . '</span>
@@ -244,7 +244,7 @@ if ( ! function_exists( 'businessprofile_get_search_form' ) ) :
     }
 endif;
 
-add_filter('get_search_form', 'businessprofile_get_search_form');
+add_filter('get_search_form', 'business_profile_get_search_form');
 
 /**
  * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
@@ -258,8 +258,8 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 /**
  * Include a skip to content link at the top of the page so that users can bypass the menu.
  */
-function businessprofile_skip_link() {
+function business_profile_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-main">' . __( 'Skip to the content', 'business-profile' ) . '</a>';
 }
 
-add_action( 'wp_body_open', 'businessprofile_skip_link', 5 );
+add_action( 'wp_body_open', 'business_profile_skip_link', 5 );

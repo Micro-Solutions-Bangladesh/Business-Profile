@@ -8,7 +8,7 @@
  /**
   * 
   */
-function businessprofile_attachment_url_to_post_thumbnail( $srcurl ) {
+function business_profile_attachment_url_to_post_thumbnail( $srcurl ) {
     $postid = attachment_url_to_postid($srcurl);
     $rs = '';
     
@@ -32,7 +32,7 @@ function businessprofile_attachment_url_to_post_thumbnail( $srcurl ) {
  * @param array $classes Classes for the body element.
  * @return array
  */
-function businessprofile_body_classes( $classes ) {
+function business_profile_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -47,24 +47,24 @@ function businessprofile_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'businessprofile_body_classes' );
+add_filter( 'body_class', 'business_profile_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function businessprofile_pingback_header() {
+function business_profile_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
-add_action( 'wp_head', 'businessprofile_pingback_header' );
+add_action( 'wp_head', 'business_profile_pingback_header' );
 
 /**
  * Customize comment form fields including the fields wrapper
  */
-add_filter( 'comment_form_default_fields', 'businessprofile_commentd_fields' );
+add_filter( 'comment_form_default_fields', 'business_profile_commentd_fields' );
 
-function businessprofile_commentd_fields( $fields ) {
+function business_profile_commentd_fields( $fields ) {
     // get the current commenter if available
     $commenter = wp_get_current_commenter();
  

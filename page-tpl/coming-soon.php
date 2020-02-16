@@ -13,7 +13,7 @@ get_header('empty');
         the_post();
         ?>
         <header class="header-brand">
-            <?php businessprofile_the_custom_logo(); ?>
+            <?php business_profile_the_custom_logo(); ?>
         </header>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php the_content(); ?>
