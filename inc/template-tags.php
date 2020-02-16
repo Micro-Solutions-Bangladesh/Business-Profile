@@ -68,7 +68,7 @@ if ( ! function_exists( 'business_profile_entry_footer' ) ) :
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'business-profile' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links"><i class="icofont-tags"></i>' . esc_html__( '%1$s', 'business-profile' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links"><i class="icofont-tags"></i>' . esc_html( '%1$s', 'business-profile' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 

@@ -203,4 +203,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * 
  */
-require get_template_directory() . '/inc/class-businessprofile-walker-comment.php';
+require get_template_directory() . '/inc/class-business-profile-walker-comment.php';

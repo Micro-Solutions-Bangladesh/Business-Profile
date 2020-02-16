@@ -213,7 +213,7 @@ embed,iframe,object{max-width:100%}
 .quick-contacts{-ms-flex-preferred-size:auto;flex-basis:auto;-ms-flex-item-align:end;align-self:flex-end}
 .comments-area .comment-author-img{display:initial}
 }@media(min-width:992px){.site-main{-ms-flex-preferred-size:0;flex-basis:0}
-.sidebar{-webkit-box-flex:0;-ms-flex:0 0 360px;flex:0 0 360px}
+.sidebar{-webkit-box-flex:0;-ms-flex:0 0 360px;flex:0 0 360px;max-width:360px}
 .posts-navigation{margin-bottom:0}
 .snap-drawers{display:none}
 #open-left{display:none}

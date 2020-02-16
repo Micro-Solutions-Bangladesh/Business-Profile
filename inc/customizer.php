@@ -70,7 +70,7 @@ function business_profile_customize_home_carousel( $wp_customize ) {
 function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_facebook', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
@@ -83,7 +83,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
 
     //
     $wp_customize->add_setting('business_profile_social_twitter', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
@@ -96,7 +96,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
 
     //
     $wp_customize->add_setting('business_profile_social_pinterest', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
@@ -109,7 +109,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
 
     //
     $wp_customize->add_setting('business_profile_social_youtube', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
@@ -122,7 +122,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
 
     //
     $wp_customize->add_setting('business_profile_social_linkedin', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
@@ -138,7 +138,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
 function business_profile_customize_admin_settings( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_admin_email', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'sanitize_email',
         'transport'   => 'refresh'
     ));
@@ -151,7 +151,7 @@ function business_profile_customize_admin_settings( $wp_customize ) {
 
     //
     $wp_customize->add_setting('business_profile_admin_phone', array(
-        'default'        => esc_html__('','business-profile'),
+        'default'        => '',
         'sanitize_callback' => 'sanitize_text_field',
         'transport'   => 'refresh'
     ));
