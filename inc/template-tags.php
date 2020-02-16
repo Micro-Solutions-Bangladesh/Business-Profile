@@ -181,7 +181,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
         $facebook = get_theme_mod( 'businessprofile_social_facebook' );
         if ( !empty($facebook) ) {
             $items[] = sprintf(
-                '<a href="%s" class="facebook" title="Follow Us on Facebook" target="_blank"><i class="icofont-facebook"></i></a>',
+                '<a href="%s" class="facebook" title="'. __("Follow Us on Facebook", 'business-profile') .'" target="_blank"><i class="icofont-facebook"></i></a>',
                 esc_url($facebook)
             );
         }
@@ -189,7 +189,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
         $twitter = get_theme_mod( 'businessprofile_social_twitter' );
         if ( !empty($twitter) ) {
             $items[] = sprintf(
-                '<a href="%s" class="twitter" title="Follow Us on Twitter" target="_blank"><i class="icofont-twitter"></i></a>',
+                '<a href="%s" class="twitter" title="'. __("Follow Us on Twitter", 'business-profile') .'" target="_blank"><i class="icofont-twitter"></i></a>',
                 esc_url($twitter)
             );
         }
@@ -197,7 +197,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
         $pinterest = get_theme_mod( 'businessprofile_social_pinterest' );
         if ( !empty($pinterest) ) {
             $items[] = sprintf(
-                '<a href="%s" class="pinterest" title="Follow Us on Pinterest" target="_blank"><i class="icofont-pinterest"></i></a>',
+                '<a href="%s" class="pinterest" title="'. __("Follow Us on Pinterest", 'business-profile') .'" target="_blank"><i class="icofont-pinterest"></i></a>',
                 esc_url($pinterest)
             );
         }
@@ -205,7 +205,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
         $youtube = get_theme_mod( 'businessprofile_social_youtube' );
         if ( !empty($youtube) ) {
             $items[] = sprintf(
-                '<a href="%s" class="youtube" title="Follow Us on Youtube" target="_blank"><i class="icofont-youtube"></i></a>',
+                '<a href="%s" class="youtube" title="'. __("Follow Us on Youtube", 'business-profile') .'" target="_blank"><i class="icofont-youtube"></i></a>',
                 esc_url($youtube)
             );
         }
@@ -213,7 +213,7 @@ if ( ! function_exists( 'businessprofile_get_social_links' ) ) :
         $linkedin = get_theme_mod( 'businessprofile_social_linkedin' );
         if ( !empty($linkedin) ) {
             $items[] = sprintf(
-                '<a href="%s" class="linkedin" title="Follow Us on Linkedin" target="_blank"><i class="icofont-linkedin"></i></a>',
+                '<a href="%s" class="linkedin" title="'. __("Follow Us on Linkedin", 'business-profile') .'" target="_blank"><i class="icofont-linkedin"></i></a>',
                 esc_url($linkedin)
             );
         }
