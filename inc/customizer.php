@@ -1,8 +1,8 @@
 <?php
 /**
- * businessprofile Theme Customizer
+ * business-profile Theme Customizer
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 function businessprofile_customize_home_carousel( $wp_customize ) {
@@ -20,7 +20,7 @@ function businessprofile_customize_home_carousel( $wp_customize ) {
             'businessprofile_home_carousel_image1', 
             array(
                 'settings' => 'businessprofile_home_carousel_image1',
-                'label'    => __('Home Carousel Image 1', 'businessprofile'),
+                'label'    => __('Home Carousel Image 1', 'business-profile'),
                 'section'  => 'businessprofile_home_carousel',
             )
         )
@@ -40,7 +40,7 @@ function businessprofile_customize_home_carousel( $wp_customize ) {
             'businessprofile_home_carousel_image2', 
             array(
                 'settings' => 'businessprofile_home_carousel_image2',
-                'label'    => __('Home Carousel Image 2', 'businessprofile'),
+                'label'    => __('Home Carousel Image 2', 'business-profile'),
                 'section'  => 'businessprofile_home_carousel',
             )
         )
@@ -60,7 +60,7 @@ function businessprofile_customize_home_carousel( $wp_customize ) {
             'businessprofile_home_carousel_image3', 
             array(
                 'settings' => 'businessprofile_home_carousel_image3',
-                'label'    => __('Home Carousel Image 3', 'businessprofile'),
+                'label'    => __('Home Carousel Image 3', 'business-profile'),
                 'section'  => 'businessprofile_home_carousel',
             )
         )
@@ -70,65 +70,65 @@ function businessprofile_customize_home_carousel( $wp_customize ) {
 function businessprofile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('businessprofile_social_facebook', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_social_facebook', array(
         'settings' => 'businessprofile_social_facebook',
-        'label'   =>  esc_html__('Facebook Profile','businessprofile'),
+        'label'   =>  esc_html__('Facebook Profile','business-profile'),
         'section' => 'businessprofile_social_urls',
         'type'    => 'url',
     ));
 
     //
     $wp_customize->add_setting('businessprofile_social_twitter', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_social_twitter', array(
         'settings' => 'businessprofile_social_twitter',
-        'label'   =>  esc_html__('Twitter Profile','businessprofile'),
+        'label'   =>  esc_html__('Twitter Profile','business-profile'),
         'section' => 'businessprofile_social_urls',
         'type'    => 'url',
     ));
 
     //
     $wp_customize->add_setting('businessprofile_social_pinterest', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_social_pinterest', array(
         'settings' => 'businessprofile_social_pinterest',
-        'label'   =>  esc_html__('Pinterest Profile','businessprofile'),
+        'label'   =>  esc_html__('Pinterest Profile','business-profile'),
         'section' => 'businessprofile_social_urls',
         'type'    => 'url',
     ));
 
     //
     $wp_customize->add_setting('businessprofile_social_youtube', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_social_youtube', array(
         'settings' => 'businessprofile_social_youtube',
-        'label'   =>  esc_html__('Youtube Profile','businessprofile'),
+        'label'   =>  esc_html__('Youtube Profile','business-profile'),
         'section' => 'businessprofile_social_urls',
         'type'    => 'url',
     ));
 
     //
     $wp_customize->add_setting('businessprofile_social_linkedin', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'esc_url',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_social_linkedin', array(
         'settings' => 'businessprofile_social_linkedin',
-        'label'   =>  esc_html__('LinkedIn Profile','businessprofile'),
+        'label'   =>  esc_html__('LinkedIn Profile','business-profile'),
         'section' => 'businessprofile_social_urls',
         'type'    => 'url',
     ));
@@ -138,26 +138,26 @@ function businessprofile_customize_social_urls( $wp_customize ) {
 function businessprofile_customize_admin_settings( $wp_customize ) {
     //
     $wp_customize->add_setting('businessprofile_admin_email', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'sanitize_email',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_admin_email', array(
         'settings' => 'businessprofile_admin_email',
-        'label'   =>  esc_html__('Admin Email','businessprofile'),
+        'label'   =>  esc_html__('Admin Email','business-profile'),
         'section' => 'businessprofile_admin_settings',
         'type'    => 'email',
     ));
 
     //
     $wp_customize->add_setting('businessprofile_admin_phone', array(
-        'default'        => esc_html__('','businessprofile'),
+        'default'        => esc_html__('','business-profile'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'businessprofile_admin_phone', array(
         'settings' => 'businessprofile_admin_phone',
-        'label'   =>  esc_html__('Admin Phone','businessprofile'),
+        'label'   =>  esc_html__('Admin Phone','business-profile'),
         'section' => 'businessprofile_admin_settings',
         'type'    => 'email',
     ));
@@ -184,7 +184,7 @@ function businessprofile_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'businessprofile_home_carousel', 
         array(
-            'title'    => __('Home Carousel', 'businessprofile'),
+            'title'    => __('Home Carousel', 'business-profile'),
             'description' => '',
             'priority' => 120,
         )
@@ -195,7 +195,7 @@ function businessprofile_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'businessprofile_social_urls', 
         array(
-            'title'    => __('Social Profiles', 'businessprofile'),
+            'title'    => __('Social Profiles', 'business-profile'),
             'description' => '',
             'priority' => 121,
         )
@@ -206,7 +206,7 @@ function businessprofile_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'businessprofile_admin_settings', 
         array(
-            'title'    => __('Admin Options', 'businessprofile'),
+            'title'    => __('Admin Options', 'business-profile'),
             'description' => '',
             'priority' => 122,
         )

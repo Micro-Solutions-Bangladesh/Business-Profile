@@ -1,6 +1,6 @@
 # Business Profile
 
-Hi. this is a WordPress theme called `businessprofile`, or `Business Profile`, if you like. I'm ready to be use as a business profile website. The part `msbd` of the theme prefix `businessprofile` comes from `Micro Solutions Bangladesh` as the theme is from [Micro Solutions Bangladesh](https://MicroSolutionsBD.com), and the other part `bp` comes from `Business Profile` (the theme name itself).
+Hi. this is a WordPress theme called `business-profile`, or `Business Profile`, if you like. I'm ready to be use as a business profile website. The part `msbd` of the theme prefix `business-profile` comes from `Micro Solutions Bangladesh` as the theme is from [Micro Solutions Bangladesh](https://MicroSolutionsBD.com), and the other part `bp` comes from `Business Profile` (the theme name itself).
 
 #### Credit
 

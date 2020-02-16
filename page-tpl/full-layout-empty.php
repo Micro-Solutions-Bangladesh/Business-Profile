@@ -2,7 +2,7 @@
 /*
  * Template Name: Full Layout Empty
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 get_header();
@@ -18,7 +18,7 @@ get_header();
                 the_content( sprintf(
                     wp_kses(
                         /* translators: %s: Name of current post. Only visible to screen readers */
-                        __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'businessprofile' ),
+                        __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'business-profile' ),
                         array(
                             'span' => array(
                                 'class' => array(),
@@ -29,7 +29,7 @@ get_header();
                 ) );
 
                 wp_link_pages( array(
-                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'businessprofile' ),
+                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business-profile' ),
                     'after'  => '</div>',
                 ) );
                 ?>

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package businessprofile
+ * @package business-profile
  */
 if ( ! function_exists( 'businessprofile_posted_on' ) ) :
 	/**
@@ -25,7 +25,7 @@ if ( ! function_exists( 'businessprofile_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'businessprofile' ),
+			esc_html_x( 'Posted on %s', 'post date', 'business-profile' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -41,7 +41,7 @@ if ( ! function_exists( 'businessprofile_posted_by' ) ) :
 	function businessprofile_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'businessprofile' ),
+			esc_html_x( 'by %s', 'post author', 'business-profile' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -58,17 +58,17 @@ if ( ! function_exists( 'businessprofile_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'businessprofile' ) );
+			$categories_list = get_the_category_list( esc_html__( ', ', 'business-profile' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'businessprofile' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'business-profile' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'businessprofile' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'business-profile' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links"><i class="icofont-tags"></i>' . esc_html__( '%1$s', 'businessprofile' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links"><i class="icofont-tags"></i>' . esc_html__( '%1$s', 'business-profile' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -78,7 +78,7 @@ if ( ! function_exists( 'businessprofile_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'businessprofile' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'business-profile' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -95,7 +95,7 @@ if ( ! function_exists( 'businessprofile_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'businessprofile' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'business-profile' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -234,8 +234,8 @@ if ( ! function_exists( 'businessprofile_get_search_form' ) ) :
     function businessprofile_get_search_form( $form ) {
         $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <label>
-                    <span class="screen-reader-text">' . __( 'Search for:', 'businessprofile' ) . '</span>
-                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'businessprofile' ) . '" value="' . get_search_query() . '" name="s" />
+                    <span class="screen-reader-text">' . __( 'Search for:', 'business-profile' ) . '</span>
+                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'business-profile' ) . '" value="' . get_search_query() . '" name="s" />
                 </label>
                 <button type="submit" class="search-submit"><i class="icofont-search-2"></i></button>
             </form>';
@@ -259,7 +259,7 @@ if ( ! function_exists( 'wp_body_open' ) ) {
  * Include a skip to content link at the top of the page so that users can bypass the menu.
  */
 function businessprofile_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-main">' . __( 'Skip to the content', 'businessprofile' ) . '</a>';
+	echo '<a class="skip-link screen-reader-text" href="#site-main">' . __( 'Skip to the content', 'business-profile' ) . '</a>';
 }
 
 add_action( 'wp_body_open', 'businessprofile_skip_link', 5 );

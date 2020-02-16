@@ -1,8 +1,8 @@
-# Copyright (C) 2019 businessprofile
+# Copyright (C) 2019 business-profile
 # This file is distributed under the same license as the businessprofile package.
 msgid ""
 msgstr ""
-"Project-Id-Version: businessprofile\n"
+"Project-Id-Version: business-profile\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

@@ -3,7 +3,7 @@
  * Custom comment walker for this theme
  *
  * @package WordPress
- * @subpackage businessprofile
+ * @subpackage business-profile
  * @since 1.0.0
  */
 
@@ -233,7 +233,7 @@ class BUSINESSPROFILE_Walker_Comment extends Walker {
         ?>
         <<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( '', $comment ); ?>>
             <div class="comment-body">
-                <?php _e( 'Pingback:', 'businessprofile' ); ?> <?php comment_author_link( $comment ); ?> <?php edit_comment_link( __( 'Edit', 'businessprofile' ), '<span class="edit-link">', '</span>' ); ?>
+                <?php _e( 'Pingback:', 'business-profile' ); ?> <?php comment_author_link( $comment ); ?> <?php edit_comment_link( __( 'Edit', 'business-profile' ), '<span class="edit-link">', '</span>' ); ?>
             </div>
         <?php
     }
@@ -260,9 +260,9 @@ class BUSINESSPROFILE_Walker_Comment extends Walker {
  
         $commenter = wp_get_current_commenter();
         if ( $commenter['comment_author_email'] ) {
-            $moderation_note = __( 'Your comment is awaiting moderation.', 'businessprofile' );
+            $moderation_note = __( 'Your comment is awaiting moderation.', 'business-profile' );
         } else {
-            $moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'businessprofile' );
+            $moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'business-profile' );
         }
  
         ?>
@@ -278,7 +278,7 @@ class BUSINESSPROFILE_Walker_Comment extends Walker {
             <?php
                 /* translators: %s: comment author link */
                 printf(
-                    __( '%s <span class="says">says:</span>', 'businessprofile' ),
+                    __( '%s <span class="says">says:</span>', 'business-profile' ),
                     sprintf( '<cite class="fn">%s</cite>', get_comment_author_link( $comment ) )
                 );
             ?>
@@ -291,11 +291,11 @@ class BUSINESSPROFILE_Walker_Comment extends Walker {
         <div class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
             <?php
                 /* translators: 1: comment date, 2: comment time */
-                printf( __( '%1$s at %2$s', 'businessprofile' ), get_comment_date( '', $comment ), get_comment_time() );
+                printf( __( '%1$s at %2$s', 'business-profile' ), get_comment_date( '', $comment ), get_comment_time() );
             ?>
                 </a>
                 <?php
-                edit_comment_link( __( '(Edit)', 'businessprofile' ), '&nbsp;&nbsp;', '' );
+                edit_comment_link( __( '(Edit)', 'business-profile' ), '&nbsp;&nbsp;', '' );
                 ?>
         </div>
  
@@ -350,9 +350,9 @@ class BUSINESSPROFILE_Walker_Comment extends Walker {
  
         $commenter = wp_get_current_commenter();
         if ( $commenter['comment_author_email'] ) {
-            $moderation_note = __( 'Your comment is awaiting moderation.', 'businessprofile' );
+            $moderation_note = __( 'Your comment is awaiting moderation.', 'business-profile' );
         } else {
-            $moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'businessprofile' );
+            $moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'business-profile' );
         }
         ?>
         <<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?>>
@@ -373,11 +373,11 @@ class BUSINESSPROFILE_Walker_Comment extends Walker {
                                 <time datetime="<?php comment_time( 'c' ); ?>">
                                     <?php
                                         /* translators: 1: comment date, 2: comment time */
-                                        printf( __( '%1$s at %2$s', 'businessprofile' ), get_comment_date( '', $comment ), get_comment_time() );
+                                        printf( __( '%1$s at %2$s', 'business-profile' ), get_comment_date( '', $comment ), get_comment_time() );
                                     ?>
                                 </time>
                             </a>
-                            <?php edit_comment_link( __( 'Edit', 'businessprofile' ) ); ?>
+                            <?php edit_comment_link( __( 'Edit', 'business-profile' ) ); ?>
                         </div>
                     </header>
                     <div class="comment-text">

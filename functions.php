@@ -1,10 +1,10 @@
 <?php
 /**
- * businessprofile functions and definitions
+ * business-profile functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 if ( ! function_exists( 'businessprofile_setup' ) ) :
@@ -20,9 +20,9 @@ if ( ! function_exists( 'businessprofile_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on businessprofile, use a find and replace
-		 * to change 'businessprofile' to the name of your theme in all the template files.
+		 * to change 'business-profile' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'businessprofile', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'business-profile', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,8 +44,8 @@ if ( ! function_exists( 'businessprofile_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-            'menu-1' => esc_html__( 'Primary', 'businessprofile' ),
-            'menu-footer' => esc_html__( 'Footer', 'businessprofile' ),
+            'menu-1' => esc_html__( 'Primary', 'business-profile' ),
+            'menu-footer' => esc_html__( 'Footer', 'business-profile' ),
 		) );
 
 		/*
@@ -100,9 +100,9 @@ add_action( 'after_setup_theme', 'businessprofile_setup' );
  */
 function businessprofile_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'businessprofile' ),
+		'name'          => esc_html__( 'Sidebar', 'business-profile' ),
 		'id'            => 'sidebar-desktop',
-		'description'   => esc_html__( 'Add widgets for desktop sidebar here.', 'businessprofile' ),
+		'description'   => esc_html__( 'Add widgets for desktop sidebar here.', 'business-profile' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -110,9 +110,9 @@ function businessprofile_widgets_init() {
     ) );
 
     register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Mobile 1', 'businessprofile' ),
+		'name'          => esc_html__( 'Sidebar Mobile 1', 'business-profile' ),
 		'id'            => 'sidebar-mobile-1',
-		'description'   => esc_html__( 'Add widgets for mobile 1st sidebar here.', 'businessprofile' ),
+		'description'   => esc_html__( 'Add widgets for mobile 1st sidebar here.', 'business-profile' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -120,9 +120,9 @@ function businessprofile_widgets_init() {
 	) );
 
     register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Mobile 2', 'businessprofile' ),
+		'name'          => esc_html__( 'Sidebar Mobile 2', 'business-profile' ),
 		'id'            => 'sidebar-mobile-2',
-		'description'   => esc_html__( 'Add widgets for mobile 2nd sidebar here.', 'businessprofile' ),
+		'description'   => esc_html__( 'Add widgets for mobile 2nd sidebar here.', 'business-profile' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',

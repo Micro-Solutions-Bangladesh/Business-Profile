@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package businessprofile
+ * @package business-profile
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

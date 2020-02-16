@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package businessprofile
+ * @package business-profile
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -34,7 +34,7 @@
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span><span class="icofont-long-arrow-right"></span>', 'businessprofile' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span><span class="icofont-long-arrow-right"></span>', 'business-profile' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -46,7 +46,7 @@
 
         if ( is_singular() ) {
             wp_link_pages( array(
-                'before' => '<div class="page-links"><span class="section-label">' . esc_html__( 'Pages:', 'businessprofile' ) . "</span>",
+                'before' => '<div class="page-links"><span class="section-label">' . esc_html__( 'Pages:', 'business-profile' ) . "</span>",
                 'after'  => '</div>',
             ) );
         }

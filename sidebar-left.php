@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package businessprofile
+ * @package business-profile
  */
 ?>
 <?php if ( is_active_sidebar( 'sidebar-mobile-1' ) && wp_is_mobile() ) { ?>
