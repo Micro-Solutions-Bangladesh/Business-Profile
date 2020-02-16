@@ -58,3 +58,27 @@ function businessprofile_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'businessprofile_pingback_header' );
+
+/**
+ * Customize comment form fields including the fields wrapper
+ */
+add_filter( 'comment_form_default_fields', 'businessprofile_commentd_fields' );
+
+function businessprofile_commentd_fields( $fields ) {
+    // get the current commenter if available
+    $commenter = wp_get_current_commenter();
+ 
+    // core functionality
+    $req      = get_option( 'require_name_email' );
+    $aria_req = ( $req ? " aria-required='true'" : '' );
+    $html_req = ( $req ? " required='required'" : '' );
+
+    $fields['author'] = '<div class="form-row mb-3 comment-input-wrap"><div class="col-sm-4 comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245" placeholder="' . __("Name", 'business-profile') . '" class="form-control"' . $html_req . $aria_req . '></div>';
+
+    $fields['email'] = '<div class="col-sm-4 comment-form-email"><input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes" placeholder="' . __("Email", 'business-profile') . '" class="form-control"' . $html_req . $aria_req . '></div>';
+
+    $fields['url'] = '<div class="col-sm-4 comment-form-url"><input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" class="form-control" size="30" maxlength="200" placeholder="' . __("Website", 'business-profile') . '"></div></div>';
+
+    return $fields;
+}
+

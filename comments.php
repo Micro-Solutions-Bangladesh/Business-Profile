@@ -73,23 +73,11 @@ if ( post_password_required() ) {
 		endif;
 	endif; // Check for have_comments().
 
-    $businessprofile_commenter = wp_get_current_commenter();
-    $businessprofile_html_req = " required='required'";
-    $businessprofile_custom_fields  = array(
-        'author'    => '<div class="form-row mb-3 comment-input-wrap"><div class="col-sm-4 comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $businessprofile_commenter['comment_author'] ) . '" size="30" maxlength="245" placeholder="' . __("Name", 'business-profile') . '" class="form-control"' . $businessprofile_html_req . '></div>',
-        
-        'email'     => '<div class="col-sm-4 comment-form-email"><input id="email" name="email" type="email" value="' . esc_attr( $businessprofile_commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes" placeholder="' . __("Email", 'business-profile') . '" class="form-control"' . $businessprofile_html_req . '></div>',
-
-        'url'       => '<div class="col-sm-4 comment-form-url"><input id="url" name="url" type="url" value="' . esc_attr( $businessprofile_commenter['comment_author_url'] ) . '" class="form-control" size="30" maxlength="200" placeholder="' . __("Website", 'business-profile') . '"></div></div>',
-    );
-    
     $args = array(
-        'fields'    => $businessprofile_custom_fields,
-
         'comment_field' =>  '<div class="form-row mb-3"><div class="col comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" class="form-control" placeholder="' . __("Comment", 'business-profile') . '"></textarea></div></div>',
 
         'class_submit'  => 'submit btn btn-primary'
     );
-	comment_form($args);
+	comment_form( $args );
 	?>
 </div>
