@@ -233,7 +233,7 @@ endif;
 if ( ! function_exists( 'businessprofile_get_search_form' ) ) :
     function businessprofile_get_search_form( $form ) {
         $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
-                <label>
+                <label class="col">
                     <span class="screen-reader-text">' . __( 'Search for:', 'business-profile' ) . '</span>
                     <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'business-profile' ) . '" value="' . get_search_query() . '" name="s" />
                 </label>

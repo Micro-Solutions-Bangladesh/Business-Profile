@@ -116,7 +116,7 @@ li li a .sf-sub-indicator{border-bottom:0 !important}
 .clear:after,.entry-content:after,.comment-content:after,.site-header:after,.site-content:after,.site-footer:after{clear:both}
 .home-carousel{background-color:#e0e1f5}
 .search-form{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 auto}
-.search-form label{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}
+.search-form label{padding:0}
 .search-form .search-field{width:100%;height:40px;border:1px solid #bfbfbf;border-right:0;padding:0 10px}
 .search-form .search-submit{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;padding:0 15px;height:40px;border:1px solid #272b7d;border-left:0;background-color:#2d3290;color:#fff;font-size:22px}
 .widget{margin:0 0 30px;padding:15px;background-color:#fff}
