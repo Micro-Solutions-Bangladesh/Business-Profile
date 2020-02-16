@@ -19,7 +19,7 @@ if ( ! function_exists( 'business_profile_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on businessprofile, use a find and replace
+		 * If you're building a theme based on business-profile, use a find and replace
 		 * to change 'business-profile' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'business-profile', get_template_directory() . '/languages' );
@@ -143,7 +143,7 @@ function business_profile_scripts() {
 
     wp_enqueue_style( 'icofont', get_theme_file_uri( "/assets/icofont/icofont.min.css" ), null, '1.0.1' );
 
-	wp_enqueue_style( 'businessprofile-style', get_stylesheet_uri(), null, $business_profile_version );
+	wp_enqueue_style( 'business-profile-style', get_stylesheet_uri(), null, $business_profile_version );
     
     wp_enqueue_script( 'bootstrap', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), '4.3.1', true );
 
@@ -151,7 +151,7 @@ function business_profile_scripts() {
 
     wp_enqueue_script( 'snap', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), '1.9.2', true );
 
-    wp_enqueue_script( 'businessprofile', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "bootstrap", "superfish", "snap" ), $business_profile_version, true );
+    wp_enqueue_script( 'business-profile', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "bootstrap", "superfish", "snap" ), $business_profile_version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
