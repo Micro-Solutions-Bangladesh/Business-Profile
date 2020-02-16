@@ -146,13 +146,13 @@ function businessprofile_scripts() {
 
 	wp_enqueue_style( 'businessprofile-style', get_stylesheet_uri(), null, $businessprofile_version );
     
-    wp_enqueue_script( 'bootstrap-js', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), '4.3.1', true );
+    wp_enqueue_script( 'bootstrap', get_theme_file_uri( "/assets/bootstrap-4.3.1/js/bootstrap.min.js" ), array( "jquery" ), '4.3.1', true );
 
-    wp_enqueue_script( 'superfish-js', get_theme_file_uri( "/assets/superfish/js/superfish.min.js" ), array( "jquery" ), '1.7.10', true );
+    wp_enqueue_script( 'superfish', get_theme_file_uri( "/assets/superfish/js/superfish.min.js" ), array( "jquery" ), '1.7.10', true );
 
-    wp_enqueue_script( 'snap-js', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), '1.9.2', true );
+    wp_enqueue_script( 'snap', get_theme_file_uri( "/assets/snap.js/snap.min.js" ), array( "jquery" ), '1.9.2', true );
 
-    wp_enqueue_script( 'businessprofile-js', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "superfish-js", "snap-js", "bootstrap-js" ), $businessprofile_version, true );
+    wp_enqueue_script( 'businessprofile', get_theme_file_uri( "/assets/js/custom.min.js" ), array( "jquery", "bootstrap", "superfish", "snap" ), $businessprofile_version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
