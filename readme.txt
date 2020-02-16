@@ -35,7 +35,12 @@ Following few sites are currently using the Business Profile theme:
 == Changelog ==
 
 = 1.0.4 =
-
+* Fix theme text domain name
+* Fix prefix of function name and vars
+* Use hook to customize the form fields of comment template
+* Fix translationable text
+* Add RTL styles
+* Delete unused fields* Update translate file
 
 = 1.0.3 =
 * Update comments box title in comments template
