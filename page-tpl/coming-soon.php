@@ -2,7 +2,7 @@
 /*
  * Template Name: Coming Soon Template
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 get_header('empty');
@@ -13,7 +13,7 @@ get_header('empty');
         the_post();
         ?>
         <header class="header-brand">
-            <?php businessprofile_the_custom_logo(); ?>
+            <?php business_profile_the_custom_logo(); ?>
         </header>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php the_content(); ?>
@@ -21,13 +21,13 @@ get_header('empty');
         <footer>
             <div class="copyright-content">
                 <span class="copyright">
-                    <?php _e( 'Copyright', 'businessprofile'); ?> &copy; <?php echo date_i18n(
-                        _x( 'Y', 'copyright date format', 'businessprofile' )
+                    <?php _e( 'Copyright', 'business-profile'); ?> &copy; <?php echo date_i18n(
+                        _x( 'Y', 'copyright date format', 'business-profile' )
                     ); ?> <?php bloginfo('name'); ?>.
                 </span> 
                 <span class="credit">
-                    <?php _e( 'Powered by', 'businessprofile'); ?> <a href="https://microsolutionsbd.com/" title="<?php _e( 'Micro Solutions Bangladesh', 'businessprofile'); ?>" target="_blank">
-                        <?php _e( 'MSBD', 'businessprofile'); ?>
+                    <?php _e( 'Powered by', 'business-profile'); ?> <a href="https://microsolutionsbd.com/" title="<?php _e( 'Micro Solutions Bangladesh', 'business-profile'); ?>" target="_blank">
+                        <?php _e( 'MSBD', 'business-profile'); ?>
                     </a>
                 </span>
             </div>

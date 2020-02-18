@@ -1,14 +1,14 @@
-# Copyright (C) 2019 businessprofile
-# This file is distributed under the same license as the businessprofile package.
+# Copyright (C) 2020 business-profile
+# This file is distributed under the same license as the business-profile package.
 msgid ""
 msgstr ""
-"Project-Id-Version: businessprofile\n"
+"Project-Id-Version: business-profile\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: ShahAlom <shahalom.amin@gmail.com>\n"
-"Last-Translator: Shah Alom <shahalom.amin@gmail.com>\n"
-"Report-Msgid-Bugs-To: https://github.com/Micro-Solutions-Bangladesh/business-profile\n"
+"Language-Team: MicroSolutions <info@microsolutionsbd.com>\n"
+"Last-Translator: Shah Alom <shahalom.amin@gmail.com.com>\n"
+"Report-Msgid-Bugs-To: https://microsolutionsbd.com/contact/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -46,19 +46,7 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:79
-msgid "Name"
-msgstr ""
-
-#: comments.php:81
-msgid "Email"
-msgstr ""
-
-#: comments.php:83
-msgid "Website"
-msgstr ""
-
-#: comments.php:89
+#: comments.php:77
 msgid "Comment"
 msgstr ""
 
@@ -91,27 +79,27 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:102
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:105
+#: functions.php:104
 msgid "Add widgets for desktop sidebar here."
 msgstr ""
 
-#: functions.php:113
+#: functions.php:112
 msgid "Sidebar Mobile 1"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:114
 msgid "Add widgets for mobile 1st sidebar here."
 msgstr ""
 
-#: functions.php:123
+#: functions.php:122
 msgid "Sidebar Mobile 2"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:124
 msgid "Add widgets for mobile 2nd sidebar here."
 msgstr ""
 
@@ -120,34 +108,34 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/class-businessprofile-walker-comment.php:236
+#: inc/class-business-profile-walker-comment.php:236
 msgid "Pingback:"
 msgstr ""
 
-#: inc/class-businessprofile-walker-comment.php:236, inc/class-businessprofile-walker-comment.php:380
+#: inc/class-business-profile-walker-comment.php:236, inc/class-business-profile-walker-comment.php:380
 msgid "Edit"
 msgstr ""
 
-#: inc/class-businessprofile-walker-comment.php:263, inc/class-businessprofile-walker-comment.php:353
+#: inc/class-business-profile-walker-comment.php:263, inc/class-business-profile-walker-comment.php:353
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/class-businessprofile-walker-comment.php:265, inc/class-businessprofile-walker-comment.php:355
+#: inc/class-business-profile-walker-comment.php:265, inc/class-business-profile-walker-comment.php:355
 msgid "Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved."
 msgstr ""
 
 #. translators: %s: comment author link
-#: inc/class-businessprofile-walker-comment.php:281
+#: inc/class-business-profile-walker-comment.php:281
 msgid "%s <span class=\"says\">says:</span>"
 msgstr ""
 
 #. translators: 1: comment date, 2: comment time
 #. translators: 1: comment date, 2: comment time
-#: inc/class-businessprofile-walker-comment.php:294, inc/class-businessprofile-walker-comment.php:376
+#: inc/class-business-profile-walker-comment.php:294, inc/class-business-profile-walker-comment.php:376
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/class-businessprofile-walker-comment.php:298
+#: inc/class-business-profile-walker-comment.php:298
 msgid "(Edit)"
 msgstr ""
 
@@ -161,9 +149,6 @@ msgstr ""
 
 #: inc/customizer.php:63
 msgid "Home Carousel Image 3"
-msgstr ""
-
-#: inc/customizer.php:73, inc/customizer.php:86, inc/customizer.php:99, inc/customizer.php:112, inc/customizer.php:125, inc/customizer.php:141, inc/customizer.php:154
 msgstr ""
 
 #: inc/customizer.php:79
@@ -206,6 +191,18 @@ msgstr ""
 msgid "Admin Options"
 msgstr ""
 
+#: inc/template-functions.php:76
+msgid "Name"
+msgstr ""
+
+#: inc/template-functions.php:78
+msgid "Email"
+msgstr ""
+
+#: inc/template-functions.php:80
+msgid "Website"
+msgstr ""
+
 #. translators: %s: post date.
 #: inc/template-tags.php:28
 msgctxt "post date"
@@ -234,11 +231,6 @@ msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
-#. translators: 1: list of tags.
-#: inc/template-tags.php:71
-msgid "%1$s"
-msgstr ""
-
 #. translators: %s: post title
 #: inc/template-tags.php:81
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
@@ -250,6 +242,26 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
+#: inc/template-tags.php:184
+msgid "Follow Us on Facebook"
+msgstr ""
+
+#: inc/template-tags.php:192
+msgid "Follow Us on Twitter"
+msgstr ""
+
+#: inc/template-tags.php:200
+msgid "Follow Us on Pinterest"
+msgstr ""
+
+#: inc/template-tags.php:208
+msgid "Follow Us on Youtube"
+msgstr ""
+
+#: inc/template-tags.php:216
+msgid "Follow Us on Linkedin"
+msgstr ""
+
 #: inc/template-tags.php:237
 msgid "Search for:"
 msgstr ""
@@ -257,6 +269,10 @@ msgstr ""
 #: inc/template-tags.php:238
 msgctxt "placeholder"
 msgid "Search &hellip;"
+msgstr ""
+
+#: inc/template-tags.php:262
+msgid "Skip to the content"
 msgstr ""
 
 #: page-tpl/coming-soon.php:3

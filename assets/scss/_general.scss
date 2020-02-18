@@ -95,6 +95,7 @@
     }
     .sidebar {
         flex: 0 0 360px;
+        max-width: ($sidebar__width-big-screen + $default-gutter * 2);
     }
     .posts-navigation {
         margin-bottom: 0;

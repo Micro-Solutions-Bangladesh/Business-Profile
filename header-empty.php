@@ -2,7 +2,7 @@
 /**
  * The empty header for our theme
  *
- * @package businessprofile
+ * @package business-profile
  */
 ?>
 <!doctype html>

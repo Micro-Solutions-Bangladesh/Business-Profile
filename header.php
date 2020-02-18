@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package businessprofile
+ * @package business-profile
  */
 ?>
 <!doctype html>
@@ -32,12 +32,12 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="logo">
-                    <?php businessprofile_the_custom_logo(); ?>
+                    <?php business_profile_the_custom_logo(); ?>
                 </div>
                 
                 <div class="quick-contacts">
                     <div class="social with-color">
-                        <?php echo businessprofile_get_social_links(); ?>
+                        <?php echo business_profile_get_social_links(); ?>
                     </div>
                 </div>
             </div>

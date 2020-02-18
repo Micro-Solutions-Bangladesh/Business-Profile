@@ -1,16 +1,16 @@
 /**
- * businessprofile Configuration File
+ * WPGulp Configuration File
  *
  * 1. Edit the variables as per your project requirements.
  * 2. In paths you can add <<glob or array of globs>>.
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 module.exports = {
 
 	// Project options.
-	projectURL: 'localhost/wp-projects/business-profile', // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
+	projectURL: 'localhost/wp-projects/msbd-company-profile', // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
 	productURL: './', // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 	browserAutoOpen: false,
 	injectChanges: true,
@@ -43,13 +43,13 @@ module.exports = {
 	watchPhp: './**/*.php', // Path to all PHP files.
 
 	// Translation options.
-	textDomain: 'businessprofile', // Your textdomain here.
-	translationFile: 'businessprofile.pot', // Name of the translation file.
+	textDomain: 'business-profile', // Your textdomain here.
+	translationFile: 'business-profile.pot', // Name of the translation file.
 	translationDestination: './languages', // Where to save the translation files.
-	packageName: 'businessprofile', // Package name.
-	bugReport: 'https://github.com/Micro-Solutions-Bangladesh/business-profile', // Where can users report bugs.
-	lastTranslator: 'Shah Alom <shahalom.amin@gmail.com>', // Last translator Email ID.
-	team: 'ShahAlom <shahalom.amin@gmail.com>', // Team's Email ID.
+	packageName: 'business-profile', // Package name.
+	bugReport: 'https://microsolutionsbd.com/contact/', // Where can users report bugs.
+	lastTranslator: 'Shah Alom <shahalom.amin@gmail.com.com>', // Last translator Email ID.
+	team: 'MicroSolutions <info@microsolutionsbd.com>', // Team's Email ID.
 
 	// Browsers you care about for autoprefixing. Browserlist https://github.com/ai/browserslist
 	// The following list is set as per WordPress requirements. Though, Feel free to change.

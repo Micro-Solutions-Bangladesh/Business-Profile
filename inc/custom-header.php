@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses businessprofile_header_style()
+ * @uses business_profile_header_style()
  */
-function businessprofile_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'businessprofile_custom_header_args', array(
+function business_profile_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'business_profile_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'businessprofile_header_style',
+		'wp-head-callback'       => 'business_profile_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'businessprofile_custom_header_setup' );
+add_action( 'after_setup_theme', 'business_profile_custom_header_setup' );
 
-if ( ! function_exists( 'businessprofile_header_style' ) ) :
+if ( ! function_exists( 'business_profile_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see businessprofile_custom_header_setup().
+	 * @see business_profile_custom_header_setup().
 	 */
-	function businessprofile_header_style() {
+	function business_profile_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

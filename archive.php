@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package businessprofile
+ * @package business-profile
  */
 
 get_header();
