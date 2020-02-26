@@ -12,5 +12,10 @@ Hi. this is a WordPress theme called `business-profile`, or `Business Profile`, 
 * [Snap.js](http://github.com/jakiestfu/Snap.js/)
 
 **Following few sites are using the Business Profile theme**
-* [Progoti IT](https://progotiit.net/)
+* [Progoti IT](https://progotiit.com/)
 * [Mercantile Global Logistics Limited](https://mglbd.com/)
+
+**Installation
+* In your admin panel, go to Appearance -> Themes and click the Add New button.
+* Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
+* Click Activate to use your new theme right away.
