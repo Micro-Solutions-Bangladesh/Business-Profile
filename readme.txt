@@ -4,27 +4,36 @@ Author: microsolutions
 Author URI: https://MicroSolutionsBD.com/
 Contributors: microsolutions, shahalom
 Description: This is the free version of Business Profile WordPress theme, We at Micro Solutions Bangladesh are planning to create a pro version with lots of usefull features.  This theme's versatility allows it to be used in a wide range of industries, making it the perfect theme if you own a business. No matter if it's a restaurant, beauty salon, house rental, hotel, coffee shop, or any other type of small business, this theme will fit your needs perfectly. With the Style Manager system you can customize your site's overall color palettes choosing from a set of predefined, carefully crafted palettes.
-Version: 1.0.5
-Stable tag: 1.0.5
-License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Version: 1.0.6
+Stable tag: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: business-profile
 Tags: portfolio, blog, custom-header, custom-logo, custom-menu, featured-images, threaded-comments
 Domain Path: /languages/
-Requires PHP: 5.4.0
+Requires PHP: 5.6
 Requires at least: 4.9.9
 Tested up to: 5.3.0
 
 == Description ==
 
-This is the free version of Business Profile WordPress theme, We at Micro Solutions Bangladesh are planning to create a pro version with lots of usefull features.
-This theme's versatility allows it to be used in a wide range of industries, making it the perfect theme if you own a business. No matter if it's a restaurant, beauty salon, house rental, hotel, coffee shop, or any other type of small business, this theme will fit your needs perfectly. With the Style Manager system you can customize your site's overall color palettes choosing from a set of predefined, carefully crafted palettes.
+This is the free version of Business Profile WordPress theme. This theme's versatility allows it to be used in a wide range of industries, making it the perfect theme if you own a business. No matter if it's a restaurant, beauty salon, house rental, hotel, coffee shop, or any other type of small business, this theme will fit your needs perfectly. With the Style Manager system you can customize your site's overall color palettes choosing from a set of predefined, carefully crafted palettes.
 
 Following few sites are currently using the Business Profile theme:
 
-* Progoti IT (https://progotiit.net/)
+* Progoti IT (https://progotiit.com/)
 * Mercantile Global Logistics Limited (https://mglbd.com/)
 
+== Credits ==
+
+The Business Profile Theme bundles the following third-party resources:
+
+* _s or underscores (https://github.com/Automattic/_s)
+* Bootstrap 4.3.1 (https://getbootstrap.com/)
+* WPGulp (https://github.com/ahmadawais/WPGulp)
+* IcoFont (https://icofont.com/)
+* SuperFish 1.7.10 (https://github.com/joeldbirch/superfish)
+* Snap.js (http://github.com/jakiestfu/Snap.js/)
 
 == Installation ==
 
@@ -33,6 +42,12 @@ Following few sites are currently using the Business Profile theme:
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.0.6 =
+* Update license
+* Update theme screenshot image size
+* Add filter hook for fomment form arguments
+* Update php version 5.6 as required
 
 = 1.0.5 =
 * Release version 1.0.5
@@ -59,16 +74,3 @@ Following few sites are currently using the Business Profile theme:
 
 = 1.0.1 =
 * Initial release
-
-== Credits ==
-
-The Business Profile Theme bundles the following third-party resources:
-
-* _s or underscores (https://github.com/Automattic/_s)
-* Bootstrap 4.3.1 (https://getbootstrap.com/)
-* WPGulp (https://github.com/ahmadawais/WPGulp)
-* IcoFont (https://icofont.com/)
-* SuperFish 1.7.10 (https://github.com/joeldbirch/superfish)
-* Snap.js (http://github.com/jakiestfu/Snap.js/)
-* 
-* Images: screenshot image from PxHere - [Source](https://pxhere.com/en/photo/1398176) licensed under CC0 Public Domain.
