@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: business-profile
 Tags: portfolio, blog, custom-header, custom-logo, custom-menu, featured-images, threaded-comments
 Domain Path: /languages/
-Requires PHP: 5.4.0
+Requires PHP: 5.6
 Requires at least: 4.9.9
 Tested up to: 5.3.0
 
@@ -22,9 +22,19 @@ This theme's versatility allows it to be used in a wide range of industries, mak
 
 Following few sites are currently using the Business Profile theme:
 
-* Progoti IT (https://progotiit.net/)
+* Progoti IT (https://progotiit.com/)
 * Mercantile Global Logistics Limited (https://mglbd.com/)
 
+== Credits ==
+
+The Business Profile Theme bundles the following third-party resources:
+
+* _s or underscores (https://github.com/Automattic/_s)
+* Bootstrap 4.3.1 (https://getbootstrap.com/)
+* WPGulp (https://github.com/ahmadawais/WPGulp)
+* IcoFont (https://icofont.com/)
+* SuperFish 1.7.10 (https://github.com/joeldbirch/superfish)
+* Snap.js (http://github.com/jakiestfu/Snap.js/)
 
 == Installation ==
 
@@ -59,16 +69,3 @@ Following few sites are currently using the Business Profile theme:
 
 = 1.0.1 =
 * Initial release
-
-== Credits ==
-
-The Business Profile Theme bundles the following third-party resources:
-
-* _s or underscores (https://github.com/Automattic/_s)
-* Bootstrap 4.3.1 (https://getbootstrap.com/)
-* WPGulp (https://github.com/ahmadawais/WPGulp)
-* IcoFont (https://icofont.com/)
-* SuperFish 1.7.10 (https://github.com/joeldbirch/superfish)
-* Snap.js (http://github.com/jakiestfu/Snap.js/)
-* 
-* Images: screenshot image from PxHere - [Source](https://pxhere.com/en/photo/1398176) licensed under CC0 Public Domain.
