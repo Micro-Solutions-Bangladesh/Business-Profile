@@ -73,11 +73,7 @@ if ( post_password_required() ) {
 		endif;
 	endif; // Check for have_comments().
 
-    $args = array(
-        'comment_field' =>  '<div class="form-row mb-3"><div class="col comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" class="form-control" placeholder="' . __("Comment", 'business-profile') . '"></textarea></div></div>',
-
-        'class_submit'  => 'submit btn btn-primary'
-    );
+    $args = business_profile_comment_field_items();
 	comment_form( $args );
 	?>
 </div>
