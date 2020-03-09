@@ -71,7 +71,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_facebook', array(
         'default'        => '',
-        'sanitize_callback' => 'esc_url',
+        'sanitize_callback' => 'esc_url_raw',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_facebook', array(
@@ -84,7 +84,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_twitter', array(
         'default'        => '',
-        'sanitize_callback' => 'esc_url',
+        'sanitize_callback' => 'esc_url_raw',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_twitter', array(
@@ -97,7 +97,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_pinterest', array(
         'default'        => '',
-        'sanitize_callback' => 'esc_url',
+        'sanitize_callback' => 'esc_url_raw',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_pinterest', array(
@@ -110,7 +110,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_youtube', array(
         'default'        => '',
-        'sanitize_callback' => 'esc_url',
+        'sanitize_callback' => 'esc_url_raw',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_youtube', array(
@@ -123,7 +123,7 @@ function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_linkedin', array(
         'default'        => '',
-        'sanitize_callback' => 'esc_url',
+        'sanitize_callback' => 'esc_url_raw',
         'transport'   => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_linkedin', array(
