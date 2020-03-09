@@ -21,8 +21,8 @@ This is the free version of Business Profile WordPress theme. This theme's versa
 
 Following few sites are currently using the Business Profile theme:
 
-* Progoti IT (https://progotiit.com/)
-* Mercantile Global Logistics Limited (https://mglbd.com/)
+* Progoti IT ( https://progotiit.com/ )
+* Blogs Palace ( http://blogspalace.com/ )
 
 == Copyright ==
 
@@ -40,16 +40,45 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 
-== Credits ==
+== Resources ==
+Business Profile bundles the following third-party resources:
 
-The Business Profile Theme bundles the following third-party resources:
+* Underscores, (C) 2012-2019 Automattic, Inc.
+Source: https://underscores.me/
+License: [GPLv2 or later]
+license Url: https://github.com/Automattic/underscores.me/blob/master/license.txt
 
-* _s or underscores (https://github.com/Automattic/_s)
-* Bootstrap 4.3.1 (https://getbootstrap.com/)
-* WPGulp (https://github.com/ahmadawais/WPGulp)
-* IcoFont (https://icofont.com/)
-* SuperFish 1.7.10 (https://github.com/joeldbirch/superfish)
-* Snap.js (http://github.com/jakiestfu/Snap.js/)
+* Bootstrap, Copyright (c) 2011-2019 Twitter, Inc.
+Source: https://getbootstrap.com/
+License: MIT
+license Url: https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+* Screenshot
+industrial-port-container-yard.jpg
+Source: https://www.freepik.com/free-photo/industrial-port-container-yard_1145655.htm#page=1&query=industrial-port-container-yard&position=29
+License: Freepik License ( Free for personal and commercial purpose with attribution. )
+license Url: https://www.freepikcompany.com/legal#nav-freepik-license
+
+* WPGulp
+Source: https://github.com/ahmadawais/WPGulp
+License: GNU General Public License v2.0
+license Url: https://github.com/ahmadawais/WPGulp/blob/master/LICENSE.md
+
+* IcoFont
+Source: https://icofont.com/
+License: MIT
+license Url: https://icofont.com/license
+
+* SuperFish 1.7.10
+Source: https://github.com/joeldbirch/superfish
+License: MIT
+license Url: https://github.com/joeldbirch/superfish/blob/master/MIT-LICENSE.txt
+
+* Snap.js
+Source: http://github.com/jakiestfu/Snap.js/
+License: MIT
+license Url: https://github.com/jakiestfu/Snap.js/blob/develop/snap.js
+
 
 == Installation ==
 
