@@ -10,7 +10,7 @@ function business_profile_customize_home_carousel( $wp_customize ) {
     $wp_customize->add_setting(
         'business_profile_home_carousel_image1', 
         array(
-            'transport'   => 'refresh',
+            'transport'         => 'refresh',
             'sanitize_callback' => 'esc_url',
         )
     );
@@ -30,7 +30,7 @@ function business_profile_customize_home_carousel( $wp_customize ) {
     $wp_customize->add_setting(
         'business_profile_home_carousel_image2', 
         array(
-            'transport'   => 'refresh',
+            'transport'         => 'refresh',
             'sanitize_callback' => 'esc_url',
         )
     );
@@ -50,7 +50,7 @@ function business_profile_customize_home_carousel( $wp_customize ) {
     $wp_customize->add_setting(
         'business_profile_home_carousel_image3', 
         array(
-            'transport'   => 'refresh',
+            'transport'         => 'refresh',
             'sanitize_callback' => 'esc_url',
         )
     );
@@ -70,67 +70,67 @@ function business_profile_customize_home_carousel( $wp_customize ) {
 function business_profile_customize_social_urls( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_social_facebook', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_facebook', array(
         'settings' => 'business_profile_social_facebook',
-        'label'   =>  esc_html__('Facebook Profile','business-profile'),
-        'section' => 'business_profile_social_urls',
-        'type'    => 'url',
+        'label'    => esc_html__('Facebook Profile','business-profile'),
+        'section'  => 'business_profile_social_urls',
+        'type'     => 'url',
     ));
 
     //
     $wp_customize->add_setting('business_profile_social_twitter', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_twitter', array(
         'settings' => 'business_profile_social_twitter',
-        'label'   =>  esc_html__('Twitter Profile','business-profile'),
-        'section' => 'business_profile_social_urls',
-        'type'    => 'url',
+        'label'    => esc_html__('Twitter Profile','business-profile'),
+        'section'  => 'business_profile_social_urls',
+        'type'     => 'url',
     ));
 
     //
     $wp_customize->add_setting('business_profile_social_pinterest', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_pinterest', array(
         'settings' => 'business_profile_social_pinterest',
-        'label'   =>  esc_html__('Pinterest Profile','business-profile'),
-        'section' => 'business_profile_social_urls',
-        'type'    => 'url',
+        'label'    => esc_html__('Pinterest Profile','business-profile'),
+        'section'  => 'business_profile_social_urls',
+        'type'     => 'url',
     ));
 
     //
     $wp_customize->add_setting('business_profile_social_youtube', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_youtube', array(
         'settings' => 'business_profile_social_youtube',
-        'label'   =>  esc_html__('Youtube Profile','business-profile'),
-        'section' => 'business_profile_social_urls',
-        'type'    => 'url',
+        'label'    => esc_html__('Youtube Profile','business-profile'),
+        'section'  => 'business_profile_social_urls',
+        'type'     => 'url',
     ));
 
     //
     $wp_customize->add_setting('business_profile_social_linkedin', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'esc_url_raw',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_social_linkedin', array(
         'settings' => 'business_profile_social_linkedin',
-        'label'   =>  esc_html__('LinkedIn Profile','business-profile'),
-        'section' => 'business_profile_social_urls',
-        'type'    => 'url',
+        'label'    => esc_html__('LinkedIn Profile','business-profile'),
+        'section'  => 'business_profile_social_urls',
+        'type'     => 'url',
     ));
 }
 
@@ -138,28 +138,28 @@ function business_profile_customize_social_urls( $wp_customize ) {
 function business_profile_customize_admin_settings( $wp_customize ) {
     //
     $wp_customize->add_setting('business_profile_admin_email', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'sanitize_email',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_admin_email', array(
         'settings' => 'business_profile_admin_email',
-        'label'   =>  esc_html__('Admin Email','business-profile'),
-        'section' => 'business_profile_admin_settings',
-        'type'    => 'email',
+        'label'    => esc_html__('Admin Email','business-profile'),
+        'section'  => 'business_profile_admin_settings',
+        'type'     => 'email',
     ));
 
     //
     $wp_customize->add_setting('business_profile_admin_phone', array(
-        'default'        => '',
+        'default'           => '',
         'sanitize_callback' => 'sanitize_text_field',
-        'transport'   => 'refresh'
+        'transport'         => 'refresh'
     ));
     $wp_customize->add_control( 'business_profile_admin_phone', array(
         'settings' => 'business_profile_admin_phone',
-        'label'   =>  esc_html__('Admin Phone','business-profile'),
-        'section' => 'business_profile_admin_settings',
-        'type'    => 'email',
+        'label'    => esc_html__('Admin Phone','business-profile'),
+        'section'  => 'business_profile_admin_settings',
+        'type'     => 'text',
     ));
 }
 
@@ -184,9 +184,9 @@ function business_profile_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'business_profile_home_carousel', 
         array(
-            'title'    => __('Home Carousel', 'business-profile'),
+            'title'       => __('Home Carousel', 'business-profile'),
             'description' => '',
-            'priority' => 120,
+            'priority'    => 120,
         )
     );
 
@@ -195,9 +195,9 @@ function business_profile_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'business_profile_social_urls', 
         array(
-            'title'    => __('Social Profiles', 'business-profile'),
+            'title'       => __('Social Profiles', 'business-profile'),
             'description' => '',
-            'priority' => 121,
+            'priority'    => 121,
         )
     );
 
@@ -206,9 +206,9 @@ function business_profile_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'business_profile_admin_settings', 
         array(
-            'title'    => __('Admin Options', 'business-profile'),
+            'title'       => __('Admin Options', 'business-profile'),
             'description' => '',
-            'priority' => 122,
+            'priority'    => 122,
         )
     );
 
@@ -242,4 +242,5 @@ function business_profile_customize_partial_blogdescription() {
 function business_profile_customize_preview_js() {
 	wp_enqueue_script( 'business-profile-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
+
 add_action( 'customize_preview_init', 'business_profile_customize_preview_js' );
