@@ -24,6 +24,22 @@ Following few sites are currently using the Business Profile theme:
 * Progoti IT (https://progotiit.com/)
 * Mercantile Global Logistics Limited (https://mglbd.com/)
 
+== Copyright ==
+
+Business Profile is a WordPress Theme, Copyright 2020 microsolutionsbd.com
+Business Profile theme is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+
 == Credits ==
 
 The Business Profile Theme bundles the following third-party resources:
