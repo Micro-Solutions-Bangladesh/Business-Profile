@@ -54,10 +54,10 @@ License: MIT
 license Url: https://github.com/twbs/bootstrap/blob/master/LICENSE
 
 * Screenshot
-industrial-port-container-yard.jpg
-Source: https://www.freepik.com/free-photo/industrial-port-container-yard_1145655.htm#page=1&query=industrial-port-container-yard&position=29
-License: Freepik License ( Free for personal and commercial purpose with attribution. )
-license Url: https://www.freepikcompany.com/legal#nav-freepik-license
+cargo-container-lot-906494.jpg
+Source: https://www.pexels.com/photo/cargo-container-lot-906494/
+License: Free License ( Free for personal and commercial purpose. )
+license Url: https://www.pexels.com/photo-license/
 
 * WPGulp
 Source: https://github.com/ahmadawais/WPGulp
