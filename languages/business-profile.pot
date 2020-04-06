@@ -46,10 +46,6 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:77
-msgid "Comment"
-msgstr ""
-
 #: footer.php:23, page-tpl/coming-soon.php:24
 msgid "Copyright"
 msgstr ""
@@ -139,55 +135,55 @@ msgstr ""
 msgid "(Edit)"
 msgstr ""
 
-#: inc/customizer.php:23
+#: inc/customizer.php:45
 msgid "Home Carousel Image 1"
 msgstr ""
 
-#: inc/customizer.php:43
+#: inc/customizer.php:65
 msgid "Home Carousel Image 2"
 msgstr ""
 
-#: inc/customizer.php:63
+#: inc/customizer.php:85
 msgid "Home Carousel Image 3"
 msgstr ""
 
-#: inc/customizer.php:79
+#: inc/customizer.php:101
 msgid "Facebook Profile"
 msgstr ""
 
-#: inc/customizer.php:92
+#: inc/customizer.php:114
 msgid "Twitter Profile"
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:127
 msgid "Pinterest Profile"
 msgstr ""
 
-#: inc/customizer.php:118
+#: inc/customizer.php:140
 msgid "Youtube Profile"
 msgstr ""
 
-#: inc/customizer.php:131
+#: inc/customizer.php:153
 msgid "LinkedIn Profile"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:169
 msgid "Admin Email"
 msgstr ""
 
-#: inc/customizer.php:160
+#: inc/customizer.php:182
 msgid "Admin Phone"
 msgstr ""
 
-#: inc/customizer.php:187
+#: inc/customizer.php:209
 msgid "Home Carousel"
 msgstr ""
 
-#: inc/customizer.php:198
+#: inc/customizer.php:220
 msgid "Social Profiles"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:231
 msgid "Admin Options"
 msgstr ""
 
@@ -201,6 +197,10 @@ msgstr ""
 
 #: inc/template-functions.php:80
 msgid "Website"
+msgstr ""
+
+#: inc/template-functions.php:90
+msgid "Comment"
 msgstr ""
 
 #. translators: %s: post date.
