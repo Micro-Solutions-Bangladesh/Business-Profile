@@ -1,11 +1,11 @@
 Theme Name: Business Profile
-Theme URI: https://demo.microsolutionsbd.com/business-profile/
+Theme URI: http://demo.microsolutionsbd.com/business-profile/
 Author: microsolutions
 Author URI: https://MicroSolutionsBD.com/
-Contributors: shahalom
+Contributors: microsolutions
 Description: This is the free version of Business Profile WordPress theme, We at Micro Solutions Bangladesh are planning to create a pro version with lots of usefull features.  This theme's versatility allows it to be used in a wide range of industries, making it the perfect theme if you own a business. No matter if it's a restaurant, beauty salon, house rental, hotel, coffee shop, or any other type of small business, this theme will fit your needs perfectly. With the Style Manager system you can customize your site's overall color palettes choosing from a set of predefined, carefully crafted palettes.
-Version: 1.0.8
-Stable tag: 1.0.8
+Version: 1.0.9
+Stable tag: 1.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: business-profile
@@ -54,10 +54,10 @@ License: MIT
 license Url: https://github.com/twbs/bootstrap/blob/master/LICENSE
 
 * Screenshot
-cargo-container-lot-906494.jpg
-Source: https://www.pexels.com/photo/cargo-container-lot-906494/
-License: Free License ( Free for personal and commercial purpose. )
-license Url: https://www.pexels.com/photo-license/
+plane-getting-fuel-free-license-cc0.jpg
+Source: https://skitterphoto.com/photos/66/airplane-getting-fuel
+License: Creative Commons CC0
+license Url: https://skitterphoto.com/license
 
 * WPGulp
 Source: https://github.com/ahmadawais/WPGulp
@@ -87,6 +87,10 @@ license Url: https://github.com/jakiestfu/Snap.js/blob/develop/snap.js
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+== 1.0.9 ==
+* Update screnshot image and its license info
+* Update contributor name
+
 == 1.0.8 ==
 * Update screnshot image with free for commercial image
 * Update sanitize function for home slider images
