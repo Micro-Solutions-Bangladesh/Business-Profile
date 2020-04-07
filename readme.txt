@@ -1,5 +1,5 @@
 Theme Name: Business Profile
-Theme URI: https://demo.microsolutionsbd.com/business-profile/
+Theme URI: http://demo.microsolutionsbd.com/business-profile/
 Author: microsolutions
 Author URI: https://MicroSolutionsBD.com/
 Contributors: microsolutions
@@ -54,10 +54,10 @@ License: MIT
 license Url: https://github.com/twbs/bootstrap/blob/master/LICENSE
 
 * Screenshot
-cargo-container-lot-906494.jpg
-Source: https://www.pexels.com/photo/cargo-container-lot-906494/
-License: Free License ( Free for personal and commercial purpose. )
-license Url: https://www.pexels.com/photo-license/
+plane-getting-fuel-free-license-cc0.jpg
+Source: https://skitterphoto.com/photos/66/airplane-getting-fuel
+License: Creative Commons CC0
+license Url: https://skitterphoto.com/license
 
 * WPGulp
 Source: https://github.com/ahmadawais/WPGulp
