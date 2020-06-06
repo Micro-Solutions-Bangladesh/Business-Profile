@@ -245,15 +245,6 @@ endif;
 add_filter('get_search_form', 'business_profile_get_search_form');
 
 /**
- * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
- */
-if ( ! function_exists( 'wp_body_open' ) ) {
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
-	}
-}
-
-/**
  * Include a skip to content link at the top of the page so that users can bypass the menu.
  */
 function business_profile_skip_link() {
