@@ -62,12 +62,6 @@ if ( ! function_exists( 'business_profile_setup' ) ) :
         // Add support for editor styles.
         add_theme_support( 'editor-styles' );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'business_profile_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
