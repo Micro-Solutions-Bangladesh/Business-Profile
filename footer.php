@@ -25,9 +25,13 @@
                     ); ?> <?php bloginfo('name'); ?>.
                 </div>
                 <div class="col-auto credit">
-                    <?php _e( 'Powered by', 'business-profile'); ?> <a href="https://microsolutionsbd.com/" title="<?php _e( 'Micro Solutions Bangladesh', 'business-profile'); ?>" target="_blank">
-                        <?php _e( 'MSBD', 'business-profile'); ?>
-                    </a>
+                    <?php
+                    echo sprintf(
+                        'Theme by <a href="https://microsolutionsbd.com/" title="%s" target="_blank">%s</a>',
+                        __( 'Micro Solutions Bangladesh', 'business-profile' ),
+                        __( 'MSBD', 'business-profile' )
+                    );
+                    ?>
                 </div>
             </div>
         </div>
