@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="logo">
-                    <?php business_profile_the_custom_logo(); ?>
+                    <?php echo the_custom_logo(); ?>
                 </div>
                 
                 <div class="quick-contacts">

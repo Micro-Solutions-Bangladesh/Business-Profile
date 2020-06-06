@@ -144,31 +144,29 @@ if ( ! function_exists( 'business_profile_post_thumbnail' ) ) :
 	}
 endif;
 
-
 /**
  *
  */
 if ( ! function_exists( 'business_profile_the_custom_logo' ) ) :
-    function business_profile_the_custom_logo($echo=true) {
-        $html = "";
-        if ( current_theme_supports( 'custom-logo' ) ) {
-            $html = get_custom_logo();
-        }
-        if( empty($html) ) {
+    function business_profile_the_custom_logo( $html = true ) {
+
+        $custom_logo_id = get_theme_mod( 'custom_logo' );
+
+        if ( ! $custom_logo_id ) {
             $html = sprintf(
                 '<a href="%s" class="text-logo-link" title="%s">%s</a>',
                 esc_url( site_url() ),
                 get_bloginfo( 'description', 'display' ),
-                get_bloginfo("name")
+                get_bloginfo( 'name' )
             );
         }
-        if( $echo ) {
-            echo $html;
-        } else {
-            return $html;
-        }
+
+        return $html;
     }
 endif;
+
+add_filter( 'get_custom_logo', 'business_profile_the_custom_logo' );
+
 
 
 /**
