@@ -66,7 +66,7 @@ license Url: https://github.com/ahmadawais/WPGulp/blob/master/LICENSE.md
 
 * IcoFont
 Source: https://icofont.com/
-License: MIT
+License: MIT, CC BY 4.0, SIL OLF
 license Url: https://icofont.com/license
 
 * SuperFish 1.7.10
