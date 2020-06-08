@@ -1,5 +1,5 @@
 .content-header {
-    margin-bottom: $big-gutter/2;
+    margin: $default-gutter 0;
 }
 
 
@@ -39,7 +39,7 @@
 }
 
 .post-thumbnail {
-    margin: 0 (-$default-gutter) $default-gutter;
+    margin: 0 (-$default-gutter);
     text-align: center;
 
     a {
@@ -127,41 +127,3 @@ article {
         }
     }
 }
-
-/**
- * <= 991px
- */
-@media (max-width: $bpmsdMax) {
-
-}
-
-/**
- * >= 576px
- */
-@media (min-width: $bpsd) {
-    
-}
-
-/**
- * >= 768px
- */
-@media (min-width: $bpmd) {
-    
-}
-
-/**
- * >= 992px
- */
-@media (min-width: $bpmsd) {
-    .post-thumbnail {
-        
-    }
-}
-
-/**
- * >= 1024px
- */
-@media (min-width: $bpld) {
-
-}
-

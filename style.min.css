@@ -132,7 +132,7 @@ li li a .sf-sub-indicator{border-bottom:0 !important}
 .widget_calendar .calendar_wrap table td,.widget_calendar .calendar_wrap table th{border:0}
 .widget_calendar .calendar_wrap a{text-decoration:underline}
 .widget-area{-ms-flex-preferred-size:360px;flex-basis:360px}
-.content-header{margin-bottom:25px}
+.content-header{margin:30px 0}
 .sticky{display:block}
 .updated:not(.published){display:none}
 .entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4{clear:both}
@@ -140,7 +140,7 @@ li li a .sf-sub-indicator{border-bottom:0 !important}
 .entry-meta a{color:#666565}
 .entry-meta span{margin-right:5px}
 .entry-meta span:last-child{margin-right:0}
-.post-thumbnail{margin:0 -30px 30px;text-align:center}
+.post-thumbnail{margin:0 -30px;text-align:center}
 .post-thumbnail a{display:block}
 .entry-footer{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#666565}
 .entry-footer a{color:#666565}
