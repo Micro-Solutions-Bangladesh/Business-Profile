@@ -55,15 +55,15 @@ msgctxt "copyright date format"
 msgid "Y"
 msgstr ""
 
-#: footer.php:28, page-tpl/coming-soon.php:29
-msgid "Powered by"
+#: footer.php:31
+msgid "Theme by"
 msgstr ""
 
-#: footer.php:28, page-tpl/coming-soon.php:29
+#: footer.php:33, page-tpl/coming-soon.php:29
 msgid "Micro Solutions Bangladesh"
 msgstr ""
 
-#: footer.php:29, page-tpl/coming-soon.php:30
+#: footer.php:34, page-tpl/coming-soon.php:30
 msgid "MSBD"
 msgstr ""
 
@@ -75,27 +75,27 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:102
+#: functions.php:96
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:98
 msgid "Add widgets for desktop sidebar here."
 msgstr ""
 
-#: functions.php:112
+#: functions.php:106
 msgid "Sidebar Mobile 1"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:108
 msgid "Add widgets for mobile 1st sidebar here."
 msgstr ""
 
-#: functions.php:122
+#: functions.php:116
 msgid "Sidebar Mobile 2"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:118
 msgid "Add widgets for mobile 2nd sidebar here."
 msgstr ""
 
@@ -175,15 +175,15 @@ msgstr ""
 msgid "Admin Phone"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:203
 msgid "Home Carousel"
 msgstr ""
 
-#: inc/customizer.php:220
+#: inc/customizer.php:214
 msgid "Social Profiles"
 msgstr ""
 
-#: inc/customizer.php:231
+#: inc/customizer.php:225
 msgid "Admin Options"
 msgstr ""
 
@@ -242,41 +242,45 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-tags.php:184
+#: inc/template-tags.php:182
 msgid "Follow Us on Facebook"
 msgstr ""
 
-#: inc/template-tags.php:192
+#: inc/template-tags.php:190
 msgid "Follow Us on Twitter"
 msgstr ""
 
-#: inc/template-tags.php:200
+#: inc/template-tags.php:198
 msgid "Follow Us on Pinterest"
 msgstr ""
 
-#: inc/template-tags.php:208
+#: inc/template-tags.php:206
 msgid "Follow Us on Youtube"
 msgstr ""
 
-#: inc/template-tags.php:216
+#: inc/template-tags.php:214
 msgid "Follow Us on Linkedin"
 msgstr ""
 
-#: inc/template-tags.php:237
+#: inc/template-tags.php:235
 msgid "Search for:"
 msgstr ""
 
-#: inc/template-tags.php:238
+#: inc/template-tags.php:236
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr ""
 
-#: inc/template-tags.php:262
+#: inc/template-tags.php:251
 msgid "Skip to the content"
 msgstr ""
 
 #: page-tpl/coming-soon.php:3
 msgid "Coming Soon Template"
+msgstr ""
+
+#: page-tpl/coming-soon.php:29
+msgid "Powered by"
 msgstr ""
 
 #: page-tpl/full-layout-empty.php:3
