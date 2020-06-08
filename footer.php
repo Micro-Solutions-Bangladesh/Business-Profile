@@ -27,7 +27,8 @@
                 <div class="col-auto credit">
                     <?php
                     echo sprintf(
-                        'Theme by <a href="%s" title="%s" target="_blank">%s</a>',
+                        '%s <a href="%s" title="%s" target="_blank">%s</a>',
+                        __( 'Theme by', 'business-profile' ),
                         'https://microsolutionsbd.com/',
                         __( 'Micro Solutions Bangladesh', 'business-profile' ),
                         __( 'MSBD', 'business-profile' )
